@@ -1,0 +1,9 @@
+[Unit]
+Description=Start Cairn when Google authorization is saved
+
+[Path]
+PathExists=/var/lib/cairn/private/google-tokens.json
+Unit=cairn-gateway.service
+
+[Install]
+WantedBy=multi-user.target

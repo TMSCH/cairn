@@ -1,0 +1,22 @@
+[Unit]
+Description=Cairn constrained Gmail MCP gateway
+After=network-online.target
+Wants=network-online.target
+ConditionPathExists=/var/lib/cairn/private/google-tokens.json
+
+[Service]
+Type=simple
+User=cairn
+Group=cairn
+WorkingDirectory=/opt/cairn
+ExecStart=/usr/bin/node /opt/cairn/dist/main.js /var/lib/cairn/private/gateway.json
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

@@ -54,7 +54,7 @@ Tests use synthetic mail and fake Google/model responses. The HTTP test starts a
 ## Operator setup
 
 1. Create a dedicated `cairn` OS user and an operator-owned private directory outside this checkout and outside Nesta's accessible filesystem; set directory permissions to `700` and JSON files to `600`. The service rejects group/world-readable private JSON files and symlink files. The token writer also requires its parent directory to be owner-only.
-2. Enable Gmail API in your Google Cloud project, configure OAuth consent and create a **Web application** OAuth client. Register the exact redirect URI `https://connect.tch.dev/google/callback`. Save a private `google-web-client.json` containing only `client_id` and `client_secret` from that client.
+2. Enable Gmail API in your Google Cloud project, configure OAuth consent and create a **Web application** OAuth client. Register the exact redirect URI `https://connect.tch.dev/google/callback`. For a personal `@gmail.com` account, choose **External** audience and add the account as a test user; **Internal** only allows members of the project's Google Workspace or Cloud Identity organization. External apps in Testing have seven-day refresh tokens, so this is for initial connection testing rather than durable access. Save a private `google-web-client.json` containing only `client_id` and `client_secret` from that client.
 3. Copy `connect.example.json` into the private directory as `connect.json`. Set the expected Google account email and private paths. Add a published application route for `connect.tch.dev` on the existing Cloudflare Tunnel pointing to `http://127.0.0.1:8790`. Protect the entire hostname, including `/google/callback`, with a Cloudflare Access application restricted to the owner. Do not add a Bypass rule. The [route details](deploy/cloudflare-route.md) fit the existing `infra` Terraform stack. Start the connection service as the isolated `cairn` identity; a [restartable systemd example](deploy/cairn-connect.service.example) is included:
 
    ```sh
@@ -71,7 +71,7 @@ Tests use synthetic mail and fake Google/model responses. The HTTP test starts a
 
    Store the token in Nesta's secret configuration; only the digest goes in the gateway configuration. Treat terminal output as secret.
 6. Copy `config.example.json` to the private directory. Replace all paths and the digest, set exact grants, and set permissions to `600`.
-7. Start as the isolated gateway identity:
+7. Start as the isolated gateway identity after Google consent has saved the refresh token. Example [gateway service](deploy/cairn-gateway.service.example) and [path trigger](deploy/cairn-gateway.path.example) units keep this separate from the connection service and start it when the token appears:
 
    ```sh
    npm start -- /absolute/private/gateway.json
