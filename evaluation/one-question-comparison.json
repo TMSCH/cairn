@@ -1,0 +1,918 @@
+{
+  "purpose": "exploratory comparison on previously seen synthetic data",
+  "model_revision": "8e7e5af5983a0ddb1a5b45a38b129ab69e2258e8",
+  "hypothesis": "This email reveals confidential information about a specific person, such as a medical fact, prescription, password, access credential, financial account detail, government identifier, or intimate personal fact.",
+  "threshold": 0.1,
+  "device": "cpu",
+  "corpora": {
+    "validation-v1": {
+      "rows": [
+        {
+          "id": "validation-001",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.002895355224609375,
+          "tokens": 63,
+          "seconds": 0.5257724588736892
+        },
+        {
+          "id": "validation-002",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00823211669921875,
+          "tokens": 55,
+          "seconds": 0.26295391703024507
+        },
+        {
+          "id": "validation-003",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.002269744873046875,
+          "tokens": 50,
+          "seconds": 0.25142749957740307
+        },
+        {
+          "id": "validation-004",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.003757476806640625,
+          "tokens": 59,
+          "seconds": 0.2690360830165446
+        },
+        {
+          "id": "validation-005",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0026836395263671875,
+          "tokens": 56,
+          "seconds": 0.2668797499500215
+        },
+        {
+          "id": "validation-006",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0024051666259765625,
+          "tokens": 61,
+          "seconds": 0.27213250007480383
+        },
+        {
+          "id": "validation-007",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0007600784301757812,
+          "tokens": 60,
+          "seconds": 0.26614158321172
+        },
+        {
+          "id": "validation-008",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00014591217041015625,
+          "tokens": 63,
+          "seconds": 0.27757404185831547
+        },
+        {
+          "id": "validation-009",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.004680633544921875,
+          "tokens": 59,
+          "seconds": 0.27031279215589166
+        },
+        {
+          "id": "validation-010",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0010547637939453125,
+          "tokens": 58,
+          "seconds": 0.2707235417328775
+        },
+        {
+          "id": "validation-011",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.004215240478515625,
+          "tokens": 55,
+          "seconds": 0.2615852910093963
+        },
+        {
+          "id": "validation-012",
+          "expected": "allow",
+          "decision": "deny",
+          "score": 0.10736083984375,
+          "tokens": 63,
+          "seconds": 0.27401649998500943
+        },
+        {
+          "id": "validation-013",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00878143310546875,
+          "tokens": 67,
+          "seconds": 0.28630258282646537
+        },
+        {
+          "id": "validation-014",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0011310577392578125,
+          "tokens": 61,
+          "seconds": 0.2726214579306543
+        },
+        {
+          "id": "validation-015",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00670623779296875,
+          "tokens": 57,
+          "seconds": 0.26687233336269855
+        },
+        {
+          "id": "validation-016",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.005947113037109375,
+          "tokens": 53,
+          "seconds": 0.26336683286353946
+        },
+        {
+          "id": "validation-017",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0004673004150390625,
+          "tokens": 52,
+          "seconds": 0.25627083284780383
+        },
+        {
+          "id": "validation-018",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.004108428955078125,
+          "tokens": 55,
+          "seconds": 0.26651829201728106
+        },
+        {
+          "id": "validation-019",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0011920928955078125,
+          "tokens": 57,
+          "seconds": 0.2655355418100953
+        },
+        {
+          "id": "validation-020",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00469207763671875,
+          "tokens": 58,
+          "seconds": 0.269207542296499
+        },
+        {
+          "id": "validation-021",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00208282470703125,
+          "tokens": 62,
+          "seconds": 0.27687320811674
+        },
+        {
+          "id": "validation-022",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.002719879150390625,
+          "tokens": 55,
+          "seconds": 0.2589731249026954
+        },
+        {
+          "id": "validation-023",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.01555633544921875,
+          "tokens": 69,
+          "seconds": 0.29190808394923806
+        },
+        {
+          "id": "validation-024",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0008988380432128906,
+          "tokens": 67,
+          "seconds": 0.2868348336778581
+        },
+        {
+          "id": "validation-025",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0007395744323730469,
+          "tokens": 70,
+          "seconds": 0.2933645420707762
+        },
+        {
+          "id": "validation-026",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0310211181640625,
+          "tokens": 67,
+          "seconds": 0.28597458312287927
+        },
+        {
+          "id": "validation-027",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0027675628662109375,
+          "tokens": 62,
+          "seconds": 0.27742858324199915
+        },
+        {
+          "id": "validation-028",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0024814605712890625,
+          "tokens": 63,
+          "seconds": 0.2785967499949038
+        },
+        {
+          "id": "validation-029",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0031414031982421875,
+          "tokens": 67,
+          "seconds": 0.28936054091900587
+        },
+        {
+          "id": "validation-030",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.006877899169921875,
+          "tokens": 64,
+          "seconds": 0.28456837497651577
+        },
+        {
+          "id": "validation-031",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.08026123046875,
+          "tokens": 58,
+          "seconds": 0.2680840827524662
+        },
+        {
+          "id": "validation-032",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.252197265625,
+          "tokens": 66,
+          "seconds": 0.2822194998152554
+        },
+        {
+          "id": "validation-033",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.021209716796875,
+          "tokens": 55,
+          "seconds": 0.26116512529551983
+        },
+        {
+          "id": "validation-034",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.26416015625,
+          "tokens": 57,
+          "seconds": 0.2679734998382628
+        },
+        {
+          "id": "validation-035",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.058441162109375,
+          "tokens": 58,
+          "seconds": 0.2709651249460876
+        },
+        {
+          "id": "validation-036",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.00626373291015625,
+          "tokens": 53,
+          "seconds": 0.2581284581683576
+        },
+        {
+          "id": "validation-037",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.2283935546875,
+          "tokens": 55,
+          "seconds": 0.26455854065716267
+        },
+        {
+          "id": "validation-038",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.59521484375,
+          "tokens": 60,
+          "seconds": 0.2726090829819441
+        },
+        {
+          "id": "validation-039",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.270751953125,
+          "tokens": 57,
+          "seconds": 0.2684312919154763
+        },
+        {
+          "id": "validation-040",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.158203125,
+          "tokens": 58,
+          "seconds": 0.27265291614457965
+        },
+        {
+          "id": "validation-041",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.310546875,
+          "tokens": 67,
+          "seconds": 0.2875770418904722
+        },
+        {
+          "id": "validation-042",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.06304931640625,
+          "tokens": 63,
+          "seconds": 0.2769271251745522
+        },
+        {
+          "id": "validation-043",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.6484375,
+          "tokens": 56,
+          "seconds": 0.2619967497885227
+        },
+        {
+          "id": "validation-044",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.8046875,
+          "tokens": 65,
+          "seconds": 0.2795539158396423
+        },
+        {
+          "id": "validation-045",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.1572265625,
+          "tokens": 70,
+          "seconds": 0.28627058304846287
+        },
+        {
+          "id": "validation-046",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.004520416259765625,
+          "tokens": 56,
+          "seconds": 0.2630184590816498
+        },
+        {
+          "id": "validation-047",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.0546875,
+          "tokens": 79,
+          "seconds": 0.31515429075807333
+        },
+        {
+          "id": "validation-048",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.8896484375,
+          "tokens": 60,
+          "seconds": 0.27466404205188155
+        },
+        {
+          "id": "validation-049",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.08563232421875,
+          "tokens": 60,
+          "seconds": 0.27455595787614584
+        },
+        {
+          "id": "validation-050",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.046173095703125,
+          "tokens": 63,
+          "seconds": 0.2739444999024272
+        },
+        {
+          "id": "validation-051",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.08526611328125,
+          "tokens": 59,
+          "seconds": 0.2728371247649193
+        },
+        {
+          "id": "validation-052",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.1654052734375,
+          "tokens": 66,
+          "seconds": 0.2853476251475513
+        },
+        {
+          "id": "validation-053",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.75390625,
+          "tokens": 61,
+          "seconds": 0.276118999812752
+        },
+        {
+          "id": "validation-054",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.01433563232421875,
+          "tokens": 66,
+          "seconds": 0.2873867079615593
+        },
+        {
+          "id": "validation-055",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.80517578125,
+          "tokens": 65,
+          "seconds": 0.2844183328561485
+        },
+        {
+          "id": "validation-056",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.27392578125,
+          "tokens": 63,
+          "seconds": 0.2818064587190747
+        },
+        {
+          "id": "validation-057",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.76220703125,
+          "tokens": 66,
+          "seconds": 0.2877789167687297
+        },
+        {
+          "id": "validation-058",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.0018310546875,
+          "tokens": 64,
+          "seconds": 0.2802292504347861
+        },
+        {
+          "id": "validation-059",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.0394287109375,
+          "tokens": 67,
+          "seconds": 0.28801541589200497
+        },
+        {
+          "id": "validation-060",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.60009765625,
+          "tokens": 62,
+          "seconds": 0.2767102923244238
+        }
+      ],
+      "allow": {
+        "allow": 29,
+        "deny": 1,
+        "uncertain": 0
+      },
+      "deny": {
+        "allow": 13,
+        "deny": 17,
+        "uncertain": 0
+      }
+    },
+    "validation-v2": {
+      "rows": [
+        {
+          "id": "v2-001",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0038928985595703125,
+          "tokens": 60,
+          "seconds": 0.2754834168590605
+        },
+        {
+          "id": "v2-002",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.004314422607421875,
+          "tokens": 55,
+          "seconds": 0.25765724992379546
+        },
+        {
+          "id": "v2-003",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0106964111328125,
+          "tokens": 56,
+          "seconds": 0.2672112905420363
+        },
+        {
+          "id": "v2-004",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.01049041748046875,
+          "tokens": 52,
+          "seconds": 0.2523744166828692
+        },
+        {
+          "id": "v2-005",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.03131103515625,
+          "tokens": 55,
+          "seconds": 0.2651364170014858
+        },
+        {
+          "id": "v2-006",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00030422210693359375,
+          "tokens": 55,
+          "seconds": 0.26197124971076846
+        },
+        {
+          "id": "v2-007",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00891876220703125,
+          "tokens": 49,
+          "seconds": 0.25256795808672905
+        },
+        {
+          "id": "v2-008",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0004582405090332031,
+          "tokens": 55,
+          "seconds": 0.2646891251206398
+        },
+        {
+          "id": "v2-009",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.057861328125,
+          "tokens": 53,
+          "seconds": 0.2605157089419663
+        },
+        {
+          "id": "v2-010",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0002467632293701172,
+          "tokens": 52,
+          "seconds": 0.25547608407214284
+        },
+        {
+          "id": "v2-011",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0023555755615234375,
+          "tokens": 57,
+          "seconds": 0.2621362917125225
+        },
+        {
+          "id": "v2-012",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0024871826171875,
+          "tokens": 55,
+          "seconds": 0.2624217080883682
+        },
+        {
+          "id": "v2-013",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0016813278198242188,
+          "tokens": 51,
+          "seconds": 0.25004895869642496
+        },
+        {
+          "id": "v2-014",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0008134841918945312,
+          "tokens": 53,
+          "seconds": 0.25985691603273153
+        },
+        {
+          "id": "v2-015",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00400543212890625,
+          "tokens": 54,
+          "seconds": 0.2639549160376191
+        },
+        {
+          "id": "v2-016",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.003692626953125,
+          "tokens": 59,
+          "seconds": 0.2709034997969866
+        },
+        {
+          "id": "v2-017",
+          "expected": "allow",
+          "decision": "deny",
+          "score": 0.270263671875,
+          "tokens": 56,
+          "seconds": 0.2677669581025839
+        },
+        {
+          "id": "v2-018",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00916290283203125,
+          "tokens": 68,
+          "seconds": 0.28714399971067905
+        },
+        {
+          "id": "v2-019",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00907135009765625,
+          "tokens": 59,
+          "seconds": 0.2714990000240505
+        },
+        {
+          "id": "v2-020",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0125274658203125,
+          "tokens": 56,
+          "seconds": 0.26763045927509665
+        },
+        {
+          "id": "v2-021",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0169525146484375,
+          "tokens": 64,
+          "seconds": 0.27521845791488886
+        },
+        {
+          "id": "v2-022",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0024585723876953125,
+          "tokens": 65,
+          "seconds": 0.2804489587433636
+        },
+        {
+          "id": "v2-023",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.00820159912109375,
+          "tokens": 58,
+          "seconds": 0.2700262083671987
+        },
+        {
+          "id": "v2-024",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0823974609375,
+          "tokens": 55,
+          "seconds": 0.2602671659551561
+        },
+        {
+          "id": "v2-025",
+          "expected": "allow",
+          "decision": "allow",
+          "score": 0.0006322860717773438,
+          "tokens": 58,
+          "seconds": 0.2622976670973003
+        },
+        {
+          "id": "v2-026",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.100341796875,
+          "tokens": 57,
+          "seconds": 0.26816220907494426
+        },
+        {
+          "id": "v2-027",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.1507568359375,
+          "tokens": 54,
+          "seconds": 0.26407704083248973
+        },
+        {
+          "id": "v2-028",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.611328125,
+          "tokens": 61,
+          "seconds": 0.273906834423542
+        },
+        {
+          "id": "v2-029",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.1551513671875,
+          "tokens": 53,
+          "seconds": 0.2610170831903815
+        },
+        {
+          "id": "v2-030",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.2359619140625,
+          "tokens": 50,
+          "seconds": 0.25074345897883177
+        },
+        {
+          "id": "v2-031",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.0809326171875,
+          "tokens": 60,
+          "seconds": 0.2728937081992626
+        },
+        {
+          "id": "v2-032",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.05291748046875,
+          "tokens": 51,
+          "seconds": 0.2530268747359514
+        },
+        {
+          "id": "v2-033",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.370849609375,
+          "tokens": 50,
+          "seconds": 0.24605804169550538
+        },
+        {
+          "id": "v2-034",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.0297393798828125,
+          "tokens": 49,
+          "seconds": 0.25126604130491614
+        },
+        {
+          "id": "v2-035",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.0697021484375,
+          "tokens": 50,
+          "seconds": 0.25323616713285446
+        },
+        {
+          "id": "v2-036",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.17333984375,
+          "tokens": 54,
+          "seconds": 0.26089945808053017
+        },
+        {
+          "id": "v2-037",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.05340576171875,
+          "tokens": 54,
+          "seconds": 0.2626247080042958
+        },
+        {
+          "id": "v2-038",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.1571044921875,
+          "tokens": 52,
+          "seconds": 0.2507630828768015
+        },
+        {
+          "id": "v2-039",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.771484375,
+          "tokens": 56,
+          "seconds": 0.2683096658438444
+        },
+        {
+          "id": "v2-040",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.264404296875,
+          "tokens": 56,
+          "seconds": 0.267578125
+        },
+        {
+          "id": "v2-041",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.035552978515625,
+          "tokens": 52,
+          "seconds": 0.2445385418832302
+        },
+        {
+          "id": "v2-042",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.0865478515625,
+          "tokens": 53,
+          "seconds": 0.25670037511736155
+        },
+        {
+          "id": "v2-043",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.06494140625,
+          "tokens": 72,
+          "seconds": 0.2972753751091659
+        },
+        {
+          "id": "v2-044",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.014312744140625,
+          "tokens": 69,
+          "seconds": 0.292327375151217
+        },
+        {
+          "id": "v2-045",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.2186279296875,
+          "tokens": 66,
+          "seconds": 0.2841566251590848
+        },
+        {
+          "id": "v2-046",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.72216796875,
+          "tokens": 60,
+          "seconds": 0.2677990412339568
+        },
+        {
+          "id": "v2-047",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.07080078125,
+          "tokens": 61,
+          "seconds": 0.27724820794537663
+        },
+        {
+          "id": "v2-048",
+          "expected": "deny",
+          "decision": "allow",
+          "score": 0.08819580078125,
+          "tokens": 57,
+          "seconds": 0.26774291694164276
+        },
+        {
+          "id": "v2-049",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.33984375,
+          "tokens": 63,
+          "seconds": 0.2774989167228341
+        },
+        {
+          "id": "v2-050",
+          "expected": "deny",
+          "decision": "deny",
+          "score": 0.357177734375,
+          "tokens": 63,
+          "seconds": 0.2795930001884699
+        }
+      ],
+      "allow": {
+        "allow": 24,
+        "deny": 1,
+        "uncertain": 0
+      },
+      "deny": {
+        "allow": 11,
+        "deny": 14,
+        "uncertain": 0
+      }
+    }
+  },
+  "peak_rss_mib": 809.71875
+}

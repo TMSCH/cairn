@@ -1,0 +1,7 @@
+{
+  "port": 8790,
+  "publicOrigin": "https://connect.tch.dev",
+  "expectedGoogleEmail": "YOUR_GOOGLE_ACCOUNT@example.com",
+  "googleCredentials": "/ABSOLUTE/PRIVATE/google-web-client.json",
+  "googleTokens": "/ABSOLUTE/PRIVATE/google-tokens.json"
+}

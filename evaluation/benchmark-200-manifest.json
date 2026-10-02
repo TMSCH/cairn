@@ -1,0 +1,17 @@
+{
+  "protocol": "200 unique synthetic emails, 100 allow and 100 deny; same v3 policy and preselected threshold 0.9/0.1 for all models; batch=8, threads=2; no changes based on outcomes. Synthetic labels authored by the same assistant, not independent human ground truth. Cached model weights only, no mailbox data.",
+  "corpus_sha256": "48ec12335f9856490e673683e44f18fce6b8a597af4d3399e3cbc4cdd636bd1b",
+  "policy_sha256": "52a9e0e946f880b056d081267e00fbbadb9caa3622c60537200667294fd51140",
+  "runner_sha256": "5fb5ec7a416953b3b4f612af924cba6b95c791de6c5e9a1d698d8255afc83b97",
+  "models": {
+    "deberta-base": "8e7e5af5983a0ddb1a5b45a38b129ab69e2258e8",
+    "deberta-xsmall": "262ae02f29173eec1c250f90804dc7edc677dcff",
+    "gliclass-edge": "727be8a417f6a7718e591b025e07054c146d8139"
+  },
+  "thresholds": {
+    "allow": 0.9,
+    "sensitive": 0.1
+  },
+  "batch_size": 8,
+  "threads": 2
+}

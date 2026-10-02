@@ -1,0 +1,29 @@
+{
+  "name": "cairn",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx --test test/*.test.ts",
+    "start": "node dist/main.js",
+    "connect": "node dist/connect.js",
+    "authorize": "tsx src/authorize.ts"
+  },
+  "dependencies": {
+    "@googleapis/gmail": "22.0.1",
+    "@modelcontextprotocol/node": "2.1.0",
+    "@modelcontextprotocol/server": "2.2.0",
+    "google-auth-library": "^11.1.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "prettier": "^3.9.9",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

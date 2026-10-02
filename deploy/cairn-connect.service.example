@@ -1,0 +1,22 @@
+[Unit]
+Description=Cairn Google connection service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=cairn
+Group=cairn
+WorkingDirectory=/opt/cairn
+ExecStart=/usr/bin/node /opt/cairn/dist/connect.js /var/lib/cairn/private/connect.json
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/cairn/private
+
+[Install]
+WantedBy=multi-user.target

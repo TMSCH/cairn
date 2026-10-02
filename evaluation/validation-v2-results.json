@@ -1,0 +1,848 @@
+{
+  "policy": "privacy-only-v3",
+  "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+  "revision": "8e7e5af5983a0ddb1a5b45a38b129ab69e2258e8",
+  "device": "cpu",
+  "backend": "nli",
+  "platform": "darwin",
+  "threads": 2,
+  "corpus_sha256": "d128ee359aa1938f371ef7b60f0514f6f2ec3239dd689103452692033f5bd4d8",
+  "runner_sha256": "5f9486c007f8ea21e127c0c0673982736c4049e436f9bb5279303734f52d5c08",
+  "privacy_policy_sha256": "52a9e0e946f880b056d081267e00fbbadb9caa3622c60537200667294fd51140",
+  "load_seconds": 0.3270278749987483,
+  "peak_rss_mib": 861.40625,
+  "median_seconds": 0.6994827291928232,
+  "sensitive_cases": 26,
+  "sensitive_disclosed": 0,
+  "non_sensitive_cases": 26,
+  "non_sensitive_allowed": 21,
+  "uncertain_cases": 5,
+  "input_limit_cases": 2,
+  "thresholds": {
+    "allow": 0.9,
+    "sensitive": 0.1
+  },
+  "production_approved": false,
+  "cases": [
+    {
+      "id": "v2-001",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "clinical_admin",
+      "tokens": 45,
+      "scores": {
+        "non_sensitive_content": 0.9833984375,
+        "private_medical_information": 0.0005917549133300781,
+        "personal_medication": 0.00041484832763671875,
+        "authentication_secret": 0.00033855438232421875,
+        "private_financial_or_identity_information": 0.001239776611328125,
+        "other_sensitive_content": 0.00015473365783691406
+      },
+      "seconds": 0.7848169580101967
+    },
+    {
+      "id": "v2-002",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "clinical_admin",
+      "tokens": 40,
+      "scores": {
+        "non_sensitive_content": 0.97802734375,
+        "private_medical_information": 0.0018062591552734375,
+        "personal_medication": 0.0007929801940917969,
+        "authentication_secret": 0.0007853507995605469,
+        "private_financial_or_identity_information": 0.0007538795471191406,
+        "other_sensitive_content": 0.00019943714141845703
+      },
+      "seconds": 0.703636874910444
+    },
+    {
+      "id": "v2-003",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "clinical_admin",
+      "tokens": 41,
+      "scores": {
+        "non_sensitive_content": 0.99072265625,
+        "private_medical_information": 0.0030269622802734375,
+        "personal_medication": 0.0001080632209777832,
+        "authentication_secret": 0.0014133453369140625,
+        "private_financial_or_identity_information": 0.0013666152954101562,
+        "other_sensitive_content": 0.0006060600280761719
+      },
+      "seconds": 0.7126149581745267
+    },
+    {
+      "id": "v2-004",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "clinical_admin",
+      "tokens": 37,
+      "scores": {
+        "non_sensitive_content": 0.97119140625,
+        "private_medical_information": 0.008880615234375,
+        "personal_medication": 0.00031948089599609375,
+        "authentication_secret": 0.00047016143798828125,
+        "private_financial_or_identity_information": 0.0013647079467773438,
+        "other_sensitive_content": 0.001255035400390625
+      },
+      "seconds": 0.6620583329349756
+    },
+    {
+      "id": "v2-005",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "clinical_admin",
+      "tokens": 40,
+      "scores": {
+        "non_sensitive_content": 0.98974609375,
+        "private_medical_information": 0.00679779052734375,
+        "personal_medication": 0.00012981891632080078,
+        "authentication_secret": 0.00116729736328125,
+        "private_financial_or_identity_information": 0.0117340087890625,
+        "other_sensitive_content": 0.0015192031860351562
+      },
+      "seconds": 0.7007252080366015
+    },
+    {
+      "id": "v2-006",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "public_medical",
+      "tokens": 40,
+      "scores": {
+        "non_sensitive_content": 0.99755859375,
+        "private_medical_information": 0.00029540061950683594,
+        "personal_medication": 0.00019407272338867188,
+        "authentication_secret": 0.00014770030975341797,
+        "private_financial_or_identity_information": 0.00018453598022460938,
+        "other_sensitive_content": 9.423494338989258e-05
+      },
+      "seconds": 0.6982402503490448
+    },
+    {
+      "id": "v2-007",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "public_medical",
+      "tokens": 34,
+      "scores": {
+        "non_sensitive_content": 0.990234375,
+        "private_medical_information": 0.00036334991455078125,
+        "personal_medication": 4.851818084716797e-05,
+        "authentication_secret": 0.00054931640625,
+        "private_financial_or_identity_information": 0.0008606910705566406,
+        "other_sensitive_content": 0.000255584716796875
+      },
+      "seconds": 0.6242793332785368
+    },
+    {
+      "id": "v2-008",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "public_medical",
+      "tokens": 40,
+      "scores": {
+        "non_sensitive_content": 0.99853515625,
+        "private_medical_information": 0.01100921630859375,
+        "personal_medication": 0.0003418922424316406,
+        "authentication_secret": 0.00018596649169921875,
+        "private_financial_or_identity_information": 0.0005025863647460938,
+        "other_sensitive_content": 0.00011771917343139648
+      },
+      "seconds": 0.6956357075832784
+    },
+    {
+      "id": "v2-009",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "public_medical",
+      "tokens": 38,
+      "scores": {
+        "non_sensitive_content": 0.98486328125,
+        "private_medical_information": 0.05108642578125,
+        "personal_medication": 0.0269927978515625,
+        "authentication_secret": 0.0014524459838867188,
+        "private_financial_or_identity_information": 0.0016012191772460938,
+        "other_sensitive_content": 0.0189361572265625
+      },
+      "seconds": 0.6750670420005918
+    },
+    {
+      "id": "v2-010",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "public_medical",
+      "tokens": 37,
+      "scores": {
+        "non_sensitive_content": 0.9482421875,
+        "private_medical_information": 0.00011771917343139648,
+        "personal_medication": 9.608268737792969e-05,
+        "authentication_secret": 0.00025916099548339844,
+        "private_financial_or_identity_information": 0.0001214742660522461,
+        "other_sensitive_content": 0.00017952919006347656
+      },
+      "seconds": 0.657577833160758
+    },
+    {
+      "id": "v2-011",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "business",
+      "tokens": 42,
+      "scores": {
+        "non_sensitive_content": 0.9970703125,
+        "private_medical_information": 0.00024771690368652344,
+        "personal_medication": 0.00036406517028808594,
+        "authentication_secret": 0.00018596649169921875,
+        "private_financial_or_identity_information": 0.002216339111328125,
+        "other_sensitive_content": 0.0003898143768310547
+      },
+      "seconds": 0.7109980420209467
+    },
+    {
+      "id": "v2-012",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "business",
+      "tokens": 40,
+      "scores": {
+        "non_sensitive_content": 0.99462890625,
+        "private_medical_information": 0.0009546279907226562,
+        "personal_medication": 0.0012302398681640625,
+        "authentication_secret": 0.0013589859008789062,
+        "private_financial_or_identity_information": 0.0024204254150390625,
+        "other_sensitive_content": 0.00034809112548828125
+      },
+      "seconds": 0.693405041936785
+    },
+    {
+      "id": "v2-013",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "business",
+      "tokens": 36,
+      "scores": {
+        "non_sensitive_content": 0.99755859375,
+        "private_medical_information": 0.00323486328125,
+        "personal_medication": 0.0013246536254882812,
+        "authentication_secret": 0.0024013519287109375,
+        "private_financial_or_identity_information": 0.003292083740234375,
+        "other_sensitive_content": 0.00026226043701171875
+      },
+      "seconds": 0.6424575001001358
+    },
+    {
+      "id": "v2-014",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "business",
+      "tokens": 38,
+      "scores": {
+        "non_sensitive_content": 0.998046875,
+        "private_medical_information": 0.00011593103408813477,
+        "personal_medication": 0.0001308917999267578,
+        "authentication_secret": 0.00029778480529785156,
+        "private_financial_or_identity_information": 0.0005526542663574219,
+        "other_sensitive_content": 0.0001329183578491211
+      },
+      "seconds": 0.6699344161897898
+    },
+    {
+      "id": "v2-015",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "business",
+      "tokens": 39,
+      "scores": {
+        "non_sensitive_content": 0.984375,
+        "private_medical_information": 0.00013136863708496094,
+        "personal_medication": 0.00013494491577148438,
+        "authentication_secret": 0.00014770030975341797,
+        "private_financial_or_identity_information": 0.0022869110107421875,
+        "other_sensitive_content": 0.00022780895233154297
+      },
+      "seconds": 0.681235124822706
+    },
+    {
+      "id": "v2-016",
+      "expected": "allow",
+      "decision": "uncertain",
+      "category": "credentials_generic",
+      "tokens": 44,
+      "scores": {
+        "non_sensitive_content": 0.48974609375,
+        "private_medical_information": 0.0003814697265625,
+        "personal_medication": 0.00047016143798828125,
+        "authentication_secret": 0.00045561790466308594,
+        "private_financial_or_identity_information": 0.0008296966552734375,
+        "other_sensitive_content": 0.0012302398681640625
+      },
+      "seconds": 0.7483578333631158
+    },
+    {
+      "id": "v2-017",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "credentials_generic",
+      "tokens": 41,
+      "scores": {
+        "non_sensitive_content": 0.98828125,
+        "private_medical_information": 0.0005202293395996094,
+        "personal_medication": 0.0003859996795654297,
+        "authentication_secret": 0.00611114501953125,
+        "private_financial_or_identity_information": 0.00565338134765625,
+        "other_sensitive_content": 0.00359344482421875
+      },
+      "seconds": 0.6958351247012615
+    },
+    {
+      "id": "v2-018",
+      "expected": "allow",
+      "decision": "deny",
+      "category": "credentials_generic",
+      "tokens": 53,
+      "scores": {
+        "non_sensitive_content": 0.97021484375,
+        "private_medical_information": 0.00572967529296875,
+        "personal_medication": 0.01374053955078125,
+        "authentication_secret": 0.00400543212890625,
+        "private_financial_or_identity_information": 0.0021533966064453125,
+        "other_sensitive_content": 0.0013828277587890625
+      },
+      "seconds": 0.8642302080988884
+    },
+    {
+      "id": "v2-019",
+      "expected": "allow",
+      "decision": "uncertain",
+      "category": "credentials_generic",
+      "tokens": 44,
+      "scores": {
+        "non_sensitive_content": 0.492919921875,
+        "private_medical_information": 0.00424957275390625,
+        "personal_medication": 0.007843017578125,
+        "authentication_secret": 0.006732940673828125,
+        "private_financial_or_identity_information": 0.0014162063598632812,
+        "other_sensitive_content": 0.002964019775390625
+      },
+      "seconds": 0.7379932082258165
+    },
+    {
+      "id": "v2-020",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "credentials_generic",
+      "tokens": 41,
+      "scores": {
+        "non_sensitive_content": 0.97314453125,
+        "private_medical_information": 0.0030689239501953125,
+        "personal_medication": 0.00928497314453125,
+        "authentication_secret": 0.0004601478576660156,
+        "private_financial_or_identity_information": 0.00045752525329589844,
+        "other_sensitive_content": 0.0004591941833496094
+      },
+      "seconds": 0.702003083191812
+    },
+    {
+      "id": "v2-021",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "multilingual",
+      "tokens": 49,
+      "scores": {
+        "non_sensitive_content": 0.96044921875,
+        "private_medical_information": 0.004055023193359375,
+        "personal_medication": 0.00042057037353515625,
+        "authentication_secret": 0.01406097412109375,
+        "private_financial_or_identity_information": 0.010650634765625,
+        "other_sensitive_content": 0.001941680908203125
+      },
+      "seconds": 0.8124893330968916
+    },
+    {
+      "id": "v2-022",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "multilingual",
+      "tokens": 50,
+      "scores": {
+        "non_sensitive_content": 0.99462890625,
+        "private_medical_information": 0.0038242340087890625,
+        "personal_medication": 0.0029296875,
+        "authentication_secret": 0.0017652511596679688,
+        "private_financial_or_identity_information": 0.00424957275390625,
+        "other_sensitive_content": 0.0007481575012207031
+      },
+      "seconds": 0.8203155416995287
+    },
+    {
+      "id": "v2-023",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "multilingual",
+      "tokens": 43,
+      "scores": {
+        "non_sensitive_content": 0.98974609375,
+        "private_medical_information": 0.004932403564453125,
+        "personal_medication": 0.00392913818359375,
+        "authentication_secret": 0.00267791748046875,
+        "private_financial_or_identity_information": 0.0008039474487304688,
+        "other_sensitive_content": 0.001651763916015625
+      },
+      "seconds": 0.7286768751218915
+    },
+    {
+      "id": "v2-024",
+      "expected": "allow",
+      "decision": "deny",
+      "category": "negative",
+      "tokens": 40,
+      "scores": {
+        "non_sensitive_content": 0.5595703125,
+        "private_medical_information": 0.307861328125,
+        "personal_medication": 0.0007481575012207031,
+        "authentication_secret": 0.0006589889526367188,
+        "private_financial_or_identity_information": 0.006412506103515625,
+        "other_sensitive_content": 0.006809234619140625
+      },
+      "seconds": 0.6889277501031756
+    },
+    {
+      "id": "v2-025",
+      "expected": "allow",
+      "decision": "allow",
+      "category": "negative",
+      "tokens": 43,
+      "scores": {
+        "non_sensitive_content": 0.9765625,
+        "private_medical_information": 0.0008759498596191406,
+        "personal_medication": 0.001129150390625,
+        "authentication_secret": 0.00033855438232421875,
+        "private_financial_or_identity_information": 0.0017271041870117188,
+        "other_sensitive_content": 0.0005693435668945312
+      },
+      "seconds": 0.7284898329526186
+    },
+    {
+      "id": "v2-026",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "personal_medication",
+      "tokens": 42,
+      "scores": {
+        "non_sensitive_content": 0.990234375,
+        "private_medical_information": 0.034698486328125,
+        "personal_medication": 0.99853515625,
+        "authentication_secret": 0.0010671615600585938,
+        "private_financial_or_identity_information": 0.0009236335754394531,
+        "other_sensitive_content": 0.0006237030029296875
+      },
+      "seconds": 0.7220540829002857
+    },
+    {
+      "id": "v2-027",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "personal_medication",
+      "tokens": 39,
+      "scores": {
+        "non_sensitive_content": 0.99658203125,
+        "private_medical_information": 0.857421875,
+        "personal_medication": 0.99951171875,
+        "authentication_secret": 0.00042724609375,
+        "private_financial_or_identity_information": 0.00033283233642578125,
+        "other_sensitive_content": 0.0007615089416503906
+      },
+      "seconds": 0.6824544579721987
+    },
+    {
+      "id": "v2-028",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "personal_medication",
+      "tokens": 46,
+      "scores": {
+        "non_sensitive_content": 0.98193359375,
+        "private_medical_information": 0.1593017578125,
+        "personal_medication": 0.99951171875,
+        "authentication_secret": 0.0006947517395019531,
+        "private_financial_or_identity_information": 0.0012111663818359375,
+        "other_sensitive_content": 0.004150390625
+      },
+      "seconds": 0.7699855002574623
+    },
+    {
+      "id": "v2-029",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "personal_medication",
+      "tokens": 38,
+      "scores": {
+        "non_sensitive_content": 0.95703125,
+        "private_medical_information": 0.1680908203125,
+        "personal_medication": 0.98388671875,
+        "authentication_secret": 0.0002970695495605469,
+        "private_financial_or_identity_information": 0.0002605915069580078,
+        "other_sensitive_content": 0.0005044937133789062
+      },
+      "seconds": 0.6714960001409054
+    },
+    {
+      "id": "v2-030",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "personal_medication",
+      "tokens": 35,
+      "scores": {
+        "non_sensitive_content": 0.96728515625,
+        "private_medical_information": 0.818359375,
+        "personal_medication": 0.95458984375,
+        "authentication_secret": 0.00064849853515625,
+        "private_financial_or_identity_information": 0.00041484832763671875,
+        "other_sensitive_content": 0.0006093978881835938
+      },
+      "seconds": 0.6361864996142685
+    },
+    {
+      "id": "v2-031",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "personal_clinical",
+      "tokens": 45,
+      "scores": {
+        "non_sensitive_content": 0.98388671875,
+        "private_medical_information": 0.97705078125,
+        "personal_medication": 0.0001780986785888672,
+        "authentication_secret": 8.547306060791016e-05,
+        "private_financial_or_identity_information": 0.0002684593200683594,
+        "other_sensitive_content": 0.01824951171875
+      },
+      "seconds": 0.7707608328200877
+    },
+    {
+      "id": "v2-032",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "personal_clinical",
+      "tokens": 36,
+      "scores": {
+        "non_sensitive_content": 0.98193359375,
+        "private_medical_information": 0.98876953125,
+        "personal_medication": 0.0004520416259765625,
+        "authentication_secret": 0.001941680908203125,
+        "private_financial_or_identity_information": 0.0014867782592773438,
+        "other_sensitive_content": 0.0240020751953125
+      },
+      "seconds": 0.6515767918899655
+    },
+    {
+      "id": "v2-033",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "personal_clinical",
+      "tokens": 35,
+      "scores": {
+        "non_sensitive_content": 0.90478515625,
+        "private_medical_information": 0.99560546875,
+        "personal_medication": 0.0006651878356933594,
+        "authentication_secret": 0.0003859996795654297,
+        "private_financial_or_identity_information": 0.0023555755615234375,
+        "other_sensitive_content": 0.0217437744140625
+      },
+      "seconds": 0.6389081249944866
+    },
+    {
+      "id": "v2-034",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "personal_clinical",
+      "tokens": 34,
+      "scores": {
+        "non_sensitive_content": 0.98193359375,
+        "private_medical_information": 0.99365234375,
+        "personal_medication": 0.0010442733764648438,
+        "authentication_secret": 0.0001964569091796875,
+        "private_financial_or_identity_information": 0.0004849433898925781,
+        "other_sensitive_content": 0.035980224609375
+      },
+      "seconds": 0.6278344998136163
+    },
+    {
+      "id": "v2-035",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "personal_clinical",
+      "tokens": 35,
+      "scores": {
+        "non_sensitive_content": 0.9169921875,
+        "private_medical_information": 0.9033203125,
+        "personal_medication": 8.481740951538086e-05,
+        "authentication_secret": 0.00018167495727539062,
+        "private_financial_or_identity_information": 0.0005803108215332031,
+        "other_sensitive_content": 0.0217437744140625
+      },
+      "seconds": 0.6401382917538285
+    },
+    {
+      "id": "v2-036",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "quoted_private",
+      "tokens": 39,
+      "scores": {
+        "non_sensitive_content": 0.99072265625,
+        "private_medical_information": 0.970703125,
+        "personal_medication": 0.00945281982421875,
+        "authentication_secret": 0.001354217529296875,
+        "private_financial_or_identity_information": 0.00469207763671875,
+        "other_sensitive_content": 0.001926422119140625
+      },
+      "seconds": 0.6907305410131812
+    },
+    {
+      "id": "v2-037",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "quoted_private",
+      "tokens": 39,
+      "scores": {
+        "non_sensitive_content": 0.9794921875,
+        "private_medical_information": 0.9697265625,
+        "personal_medication": 0.00012481212615966797,
+        "authentication_secret": 0.0004305839538574219,
+        "private_financial_or_identity_information": 0.002590179443359375,
+        "other_sensitive_content": 0.0191802978515625
+      },
+      "seconds": 0.6874835002236068
+    },
+    {
+      "id": "v2-038",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "subject_private",
+      "tokens": 37,
+      "scores": {
+        "non_sensitive_content": 0.97900390625,
+        "private_medical_information": 0.059814453125,
+        "personal_medication": 0.96875,
+        "authentication_secret": 0.0014104843139648438,
+        "private_financial_or_identity_information": 0.004329681396484375,
+        "other_sensitive_content": 0.004108428955078125
+      },
+      "seconds": 0.6627023331820965
+    },
+    {
+      "id": "v2-039",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "mixed_private",
+      "tokens": 41,
+      "scores": {
+        "non_sensitive_content": 0.0792236328125,
+        "private_medical_information": 0.99755859375,
+        "personal_medication": 0.0019989013671875,
+        "authentication_secret": 0.0009546279907226562,
+        "private_financial_or_identity_information": 0.008331298828125,
+        "other_sensitive_content": 0.450927734375
+      },
+      "seconds": 0.7124890419654548
+    },
+    {
+      "id": "v2-040",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "mixed_private",
+      "tokens": 41,
+      "scores": {
+        "non_sensitive_content": 0.02056884765625,
+        "private_medical_information": 0.80224609375,
+        "personal_medication": 0.00024819374084472656,
+        "authentication_secret": 0.00395965576171875,
+        "private_financial_or_identity_information": 0.004886627197265625,
+        "other_sensitive_content": 0.08489990234375
+      },
+      "seconds": 0.7145800828002393
+    },
+    {
+      "id": "v2-041",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "auth_secret",
+      "tokens": 37,
+      "scores": {
+        "non_sensitive_content": 0.346923828125,
+        "private_medical_information": 0.0058441162109375,
+        "personal_medication": 0.0023555755615234375,
+        "authentication_secret": 0.436279296875,
+        "private_financial_or_identity_information": 0.003154754638671875,
+        "other_sensitive_content": 0.0027790069580078125
+      },
+      "seconds": 0.6641194592230022
+    },
+    {
+      "id": "v2-042",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "auth_secret",
+      "tokens": 38,
+      "scores": {
+        "non_sensitive_content": 0.88232421875,
+        "private_medical_information": 0.00939178466796875,
+        "personal_medication": 0.00806427001953125,
+        "authentication_secret": 0.0009474754333496094,
+        "private_financial_or_identity_information": 0.00615692138671875,
+        "other_sensitive_content": 0.006744384765625
+      },
+      "seconds": 0.6753117917105556
+    },
+    {
+      "id": "v2-043",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "auth_secret",
+      "tokens": 57,
+      "scores": {
+        "non_sensitive_content": 0.13134765625,
+        "private_medical_information": 0.00368499755859375,
+        "personal_medication": 0.0209503173828125,
+        "authentication_secret": 0.0258026123046875,
+        "private_financial_or_identity_information": 0.0011920928955078125,
+        "other_sensitive_content": 0.03033447265625
+      },
+      "seconds": 0.927721458952874
+    },
+    {
+      "id": "v2-044",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "auth_secret",
+      "tokens": 54,
+      "scores": {
+        "non_sensitive_content": 0.96142578125,
+        "private_medical_information": 0.005542755126953125,
+        "personal_medication": 0.01212310791015625,
+        "authentication_secret": 0.0011692047119140625,
+        "private_financial_or_identity_information": 0.0013751983642578125,
+        "other_sensitive_content": 0.005512237548828125
+      },
+      "seconds": 0.8885480421595275
+    },
+    {
+      "id": "v2-045",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "auth_secret",
+      "tokens": 51,
+      "scores": {
+        "non_sensitive_content": 0.005481719970703125,
+        "private_medical_information": 0.005344390869140625,
+        "personal_medication": 0.0011768341064453125,
+        "authentication_secret": 0.97998046875,
+        "private_financial_or_identity_information": 0.0008592605590820312,
+        "other_sensitive_content": 0.78125
+      },
+      "seconds": 0.8480575419962406
+    },
+    {
+      "id": "v2-046",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "identity_financial",
+      "tokens": 45,
+      "scores": {
+        "non_sensitive_content": 0.82275390625,
+        "private_medical_information": 0.048553466796875,
+        "personal_medication": 0.0011243820190429688,
+        "authentication_secret": 0.0017614364624023438,
+        "private_financial_or_identity_information": 0.9775390625,
+        "other_sensitive_content": 0.0611572265625
+      },
+      "seconds": 0.7713886252604425
+    },
+    {
+      "id": "v2-047",
+      "expected": "deny",
+      "decision": "uncertain",
+      "category": "identity_financial",
+      "tokens": 46,
+      "scores": {
+        "non_sensitive_content": 0.49853515625,
+        "private_medical_information": 0.00701141357421875,
+        "personal_medication": 0.0010709762573242188,
+        "authentication_secret": 0.0002994537353515625,
+        "private_financial_or_identity_information": 0.0018825531005859375,
+        "other_sensitive_content": 0.054656982421875
+      },
+      "seconds": 0.7855733330361545
+    },
+    {
+      "id": "v2-048",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "identity_financial",
+      "tokens": 42,
+      "scores": {
+        "non_sensitive_content": 0.908203125,
+        "private_medical_information": 0.01050567626953125,
+        "personal_medication": 0.00021147727966308594,
+        "authentication_secret": 0.00015294551849365234,
+        "private_financial_or_identity_information": 0.99169921875,
+        "other_sensitive_content": 0.1610107421875
+      },
+      "seconds": 0.7364182500168681
+    },
+    {
+      "id": "v2-049",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "multilingual_private",
+      "tokens": 48,
+      "scores": {
+        "non_sensitive_content": 0.35546875,
+        "private_medical_information": 0.99853515625,
+        "personal_medication": 0.053863525390625,
+        "authentication_secret": 0.00075531005859375,
+        "private_financial_or_identity_information": 0.0025653839111328125,
+        "other_sensitive_content": 0.6572265625
+      },
+      "seconds": 0.8092631250619888
+    },
+    {
+      "id": "v2-050",
+      "expected": "deny",
+      "decision": "deny",
+      "category": "multilingual_private",
+      "tokens": 48,
+      "scores": {
+        "non_sensitive_content": 0.9677734375,
+        "private_medical_information": 0.99658203125,
+        "personal_medication": 0.005031585693359375,
+        "authentication_secret": 0.0018854141235351562,
+        "private_financial_or_identity_information": 0.0017480850219726562,
+        "other_sensitive_content": 0.059478759765625
+      },
+      "seconds": 0.8073027911596
+    },
+    {
+      "id": "v2-051",
+      "expected": "allow",
+      "decision": "uncertain",
+      "scores": {},
+      "seconds": 0.008054208941757679,
+      "reason": "input_limit",
+      "tokens": 1783,
+      "category": "length_stress"
+    },
+    {
+      "id": "v2-052",
+      "expected": "deny",
+      "decision": "uncertain",
+      "scores": {},
+      "seconds": 0.008136667311191559,
+      "reason": "input_limit",
+      "tokens": 1791,
+      "category": "length_stress"
+    }
+  ]
+}

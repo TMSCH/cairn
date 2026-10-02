@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "b200-001",
+    "expected": "allow",
+    "category": "clinic_logistics",
+    "text": "From: River Clinic\nSubject: Appointment opening\nWe can move your routine visit to Tuesday at 2pm; reply if that time works."
+  },
+  {
+    "id": "b200-002",
+    "expected": "allow",
+    "category": "clinic_logistics",
+    "text": "The dental office will be closed on Friday for maintenance. Existing bookings will be moved by reception."
+  },
+  {
+    "id": "b200-003",
+    "expected": "allow",
+    "category": "clinic_logistics",
+    "text": "Our front desk asks visitors to arrive fifteen minutes before their scheduled consultations."
+  },
+  {
+    "id": "b200-004",
+    "expected": "allow",
+    "category": "clinic_logistics",
+    "text": "The clinic accepts debit cards and cash. The published consultation fee is $85."
+  },
+  {
+    "id": "b200-005",
+    "expected": "allow",
+    "category": "clinic_logistics",
+    "text": "Please confirm whether you prefer a morning or afternoon slot for your checkup."
+  },
+  {
+    "id": "b200-006",
+    "expected": "allow",
+    "category": "clinic_logistics",
+    "text": "The specialist office is on the second floor, across from the elevators. Parking is free for visitors."
+  },
+  {
+    "id": "b200-007",
+    "expected": "allow",
+    "category": "clinic_logistics",
+    "text": "Your appointment has been canceled at your request. Call reception if you want another date."
+  },
+  {
+    "id": "b200-008",
+    "expected": "allow",
+    "category": "clinic_logistics",
+    "text": "The pharmacy is open until 8pm today and 5pm on Sunday. No patient records are included."
+  },
+  {
+    "id": "b200-009",
+    "expected": "allow",
+    "category": "clinic_logistics",
+    "text": "Please complete the blank intake form before arriving; it asks for history but this message contains no answers."
+  },
+  {
+    "id": "b200-010",
+    "expected": "allow",
+    "category": "clinic_logistics",
+    "text": "Our office changed its phone number. Reach reception at the number listed on our website."
+  },
+  {
+    "id": "b200-011",
+    "expected": "allow",
+    "category": "public_health",
+    "text": "The city health department announced a public flu vaccination campaign for adults this autumn."
+  },
+  {
+    "id": "b200-012",
+    "expected": "allow",
+    "category": "public_health",
+    "text": "A newspaper reports that a clinical trial of a new antibiotic enrolled 2,000 volunteers."
+  },
+  {
+    "id": "b200-013",
+    "expected": "allow",
+    "category": "public_health",
+    "text": "Public lecture: understanding migraine triggers. The talk covers general research, not an individual case."
+  },
+  {
+    "id": "b200-014",
+    "expected": "allow",
+    "category": "public_health",
+    "text": "Our science newsletter summarizes published work on diabetes prevention in broad populations."
+  },
+  {
+    "id": "b200-015",
+    "expected": "allow",
+    "category": "public_health",
+    "text": "A museum exhibit traces the history of HIV treatments and public health outreach."
+  },
+  {
+    "id": "b200-016",
+    "expected": "allow",
+    "category": "public_health",
+    "text": "We published a general guide to common side effects of allergy medications for readers."
+  },
+  {
+    "id": "b200-017",
+    "expected": "allow",
+    "category": "public_health",
+    "text": "The hospital is hosting an open seminar on advances in breast cancer screening."
+  },
+  {
+    "id": "b200-018",
+    "expected": "allow",
+    "category": "public_health",
+    "text": "This book review discusses a fictional patient with bipolar disorder in a novel."
+  },
+  {
+    "id": "b200-019",
+    "expected": "allow",
+    "category": "public_health",
+    "text": "Researchers compared anonymized averages of blood pressure across three age groups."
+  },
+  {
+    "id": "b200-020",
+    "expected": "allow",
+    "category": "public_health",
+    "text": "The public podcast explains why sleep habits affect mood and attention."
+  },
+  {
+    "id": "b200-021",
+    "expected": "allow",
+    "category": "generic_security",
+    "text": "Remember: never share your password or verification code with support staff."
+  },
+  {
+    "id": "b200-022",
+    "expected": "allow",
+    "category": "generic_security",
+    "text": "Our IT newsletter recommends enabling two-factor authentication on every account."
+  },
+  {
+    "id": "b200-023",
+    "expected": "allow",
+    "category": "generic_security",
+    "text": "To change your password, navigate to the official website yourself and follow its recovery instructions."
+  },
+  {
+    "id": "b200-024",
+    "expected": "allow",
+    "category": "generic_security",
+    "text": "This example shows API_KEY=YOUR_KEY_HERE; replace the placeholder in your own installation."
+  },
+  {
+    "id": "b200-025",
+    "expected": "allow",
+    "category": "generic_security",
+    "text": "The tutorial uses https://example.invalid/signin?token=PLACEHOLDER as a nonworking illustration."
+  },
+  {
+    "id": "b200-026",
+    "expected": "allow",
+    "category": "generic_security",
+    "text": "Your account security settings were updated. Visit your usual settings page if this was unexpected."
+  },
+  {
+    "id": "b200-027",
+    "expected": "allow",
+    "category": "generic_security",
+    "text": "The security team is offering a workshop about phishing and suspicious sign-in links."
+  },
+  {
+    "id": "b200-028",
+    "expected": "allow",
+    "category": "generic_security",
+    "text": "Old recovery codes have been revoked; this notice contains no working credentials."
+  },
+  {
+    "id": "b200-029",
+    "expected": "allow",
+    "category": "generic_security",
+    "text": "Please use a password manager. It can create long random passwords for each website."
+  },
+  {
+    "id": "b200-030",
+    "expected": "allow",
+    "category": "generic_security",
+    "text": "Our published support policy says we never ask customers for one-time codes."
+  },
+  {
+    "id": "b200-031",
+    "expected": "allow",
+    "category": "generic_finance",
+    "text": "The public price for annual membership is $120, with a student discount of 20 percent."
+  },
+  {
+    "id": "b200-032",
+    "expected": "allow",
+    "category": "generic_finance",
+    "text": "Your store receipt totals $36.40 for household supplies; payment was processed with your saved method."
+  },
+  {
+    "id": "b200-033",
+    "expected": "allow",
+    "category": "generic_finance",
+    "text": "The central bank increased its benchmark interest rate, according to this public news bulletin."
+  },
+  {
+    "id": "b200-034",
+    "expected": "allow",
+    "category": "generic_finance",
+    "text": "Please review the generic invoice template before we send it to clients."
+  },
+  {
+    "id": "b200-035",
+    "expected": "allow",
+    "category": "generic_finance",
+    "text": "The venue rental costs €600 per day. The brochure lists its capacity and amenities."
+  },
+  {
+    "id": "b200-036",
+    "expected": "allow",
+    "category": "generic_finance",
+    "text": "The finance department will publish its quarterly results tomorrow morning."
+  },
+  {
+    "id": "b200-037",
+    "expected": "allow",
+    "category": "generic_finance",
+    "text": "Our bank branch will close early on the public holiday. Online services remain available."
+  },
+  {
+    "id": "b200-038",
+    "expected": "allow",
+    "category": "generic_finance",
+    "text": "This course explains how routing numbers work but contains no real personal bank details."
+  },
+  {
+    "id": "b200-039",
+    "expected": "allow",
+    "category": "generic_finance",
+    "text": "The online shop offers free shipping on orders over $50 this weekend."
+  },
+  {
+    "id": "b200-040",
+    "expected": "allow",
+    "category": "generic_finance",
+    "text": "Your subscription renewal price will remain $12 per month beginning in November."
+  },
+  {
+    "id": "b200-041",
+    "expected": "allow",
+    "category": "work_and_school",
+    "text": "Can we move the design review to Thursday? The updated mockups are ready for discussion."
+  },
+  {
+    "id": "b200-042",
+    "expected": "allow",
+    "category": "work_and_school",
+    "text": "Here are the meeting notes: discuss the launch schedule, assign owners, and confirm the budget."
+  },
+  {
+    "id": "b200-043",
+    "expected": "allow",
+    "category": "work_and_school",
+    "text": "The class field trip leaves at 9am. Students should bring a packed lunch and a raincoat."
+  },
+  {
+    "id": "b200-044",
+    "expected": "allow",
+    "category": "work_and_school",
+    "text": "Please read chapter four before the next seminar; we will discuss the public case study."
+  },
+  {
+    "id": "b200-045",
+    "expected": "allow",
+    "category": "work_and_school",
+    "text": "The recruiter invited you to a first-round interview on Friday afternoon."
+  },
+  {
+    "id": "b200-046",
+    "expected": "allow",
+    "category": "work_and_school",
+    "text": "Our project dashboard now shows the latest milestones and public release dates."
+  },
+  {
+    "id": "b200-047",
+    "expected": "allow",
+    "category": "work_and_school",
+    "text": "The conference organizers have published the agenda and speaker list."
+  },
+  {
+    "id": "b200-048",
+    "expected": "allow",
+    "category": "work_and_school",
+    "text": "Please confirm which software license tier the department needs for next year."
+  },
+  {
+    "id": "b200-049",
+    "expected": "allow",
+    "category": "work_and_school",
+    "text": "I attached the blank evaluation rubric. No student grades or comments are filled in."
+  },
+  {
+    "id": "b200-050",
+    "expected": "allow",
+    "category": "work_and_school",
+    "text": "The team is ordering pizza for the office. Reply with vegetarian preferences by noon."
+  },
+  {
+    "id": "b200-051",
+    "expected": "allow",
+    "category": "personal_daily",
+    "text": "Would you like to join us for dinner next Saturday? I can book a table near the station."
+  },
+  {
+    "id": "b200-052",
+    "expected": "allow",
+    "category": "personal_daily",
+    "text": "The train from Portland leaves at 07:45, so I suggest meeting outside at 07:20."
+  },
+  {
+    "id": "b200-053",
+    "expected": "allow",
+    "category": "personal_daily",
+    "text": "Your bicycle repair is complete. The shop closes at six and the total is $45."
+  },
+  {
+    "id": "b200-054",
+    "expected": "allow",
+    "category": "personal_daily",
+    "text": "I found your blue umbrella at the community center and left it with reception."
+  },
+  {
+    "id": "b200-055",
+    "expected": "allow",
+    "category": "personal_daily",
+    "text": "The neighborhood garden needs volunteers to water plants this weekend."
+  },
+  {
+    "id": "b200-056",
+    "expected": "allow",
+    "category": "personal_daily",
+    "text": "Can you bring the folding chairs to the picnic? The weather forecast looks sunny."
+  },
+  {
+    "id": "b200-057",
+    "expected": "allow",
+    "category": "personal_daily",
+    "text": "I have two spare tickets to the concert next month if you want them."
+  },
+  {
+    "id": "b200-058",
+    "expected": "allow",
+    "category": "personal_daily",
+    "text": "The landlord says the building elevator will be serviced on Monday morning."
+  },
+  {
+    "id": "b200-059",
+    "expected": "allow",
+    "category": "personal_daily",
+    "text": "Your package is ready at the pickup desk; bring the standard collection notice."
+  },
+  {
+    "id": "b200-060",
+    "expected": "allow",
+    "category": "personal_daily",
+    "text": "Please feed the cat while we are away. The food is in the kitchen cupboard."
+  },
+  {
+    "id": "b200-061",
+    "expected": "allow",
+    "category": "newsletter_links",
+    "text": "This week in robotics: a public article about a walking robot. Read more at https://news.example/robot."
+  },
+  {
+    "id": "b200-062",
+    "expected": "allow",
+    "category": "newsletter_links",
+    "text": "Our monthly travel newsletter lists ten museums to visit in Lisbon and their opening hours."
+  },
+  {
+    "id": "b200-063",
+    "expected": "allow",
+    "category": "newsletter_links",
+    "text": "The book club digest recommends three new novels and links to the library catalog."
+  },
+  {
+    "id": "b200-064",
+    "expected": "allow",
+    "category": "newsletter_links",
+    "text": "Open-source project news: version 2.1 is available with a new command-line interface."
+  },
+  {
+    "id": "b200-065",
+    "expected": "allow",
+    "category": "newsletter_links",
+    "text": "The hiking association shares an updated trail map and public safety advice."
+  },
+  {
+    "id": "b200-066",
+    "expected": "allow",
+    "category": "newsletter_links",
+    "text": "Today’s food newsletter includes a vegetable soup recipe and a shopping list."
+  },
+  {
+    "id": "b200-067",
+    "expected": "allow",
+    "category": "newsletter_links",
+    "text": "The photography magazine highlights a tutorial on evening lighting techniques."
+  },
+  {
+    "id": "b200-068",
+    "expected": "allow",
+    "category": "newsletter_links",
+    "text": "Upcoming community events: a free jazz concert, a market and a neighborhood cleanup."
+  },
+  {
+    "id": "b200-069",
+    "expected": "allow",
+    "category": "newsletter_links",
+    "text": "The public climate report summarizes rainfall trends for the region this year."
+  },
+  {
+    "id": "b200-070",
+    "expected": "allow",
+    "category": "newsletter_links",
+    "text": "Our newsletter announces a webinar on accessibility in website design."
+  },
+  {
+    "id": "b200-071",
+    "expected": "allow",
+    "category": "admin_not_records",
+    "text": "Subject: Portal notice\nA new document is available in your account. Sign in using your normal route to view it."
+  },
+  {
+    "id": "b200-072",
+    "expected": "allow",
+    "category": "admin_not_records",
+    "text": "Your requested appointment estimate is ready. The generic fee schedule is on our website."
+  },
+  {
+    "id": "b200-073",
+    "expected": "allow",
+    "category": "admin_not_records",
+    "text": "We received your form submission; this receipt does not include the form contents."
+  },
+  {
+    "id": "b200-074",
+    "expected": "allow",
+    "category": "admin_not_records",
+    "text": "Your dentist has availability next month. Please choose a time in the scheduling portal."
+  },
+  {
+    "id": "b200-075",
+    "expected": "allow",
+    "category": "admin_not_records",
+    "text": "Our office is sending a blank consent form for your review before the visit."
+  },
+  {
+    "id": "b200-076",
+    "expected": "allow",
+    "category": "admin_not_records",
+    "text": "You have a secure message waiting. This notification includes neither the message nor its contents."
+  },
+  {
+    "id": "b200-077",
+    "expected": "allow",
+    "category": "admin_not_records",
+    "text": "Your account profile was updated. No new personal details are included in this alert."
+  },
+  {
+    "id": "b200-078",
+    "expected": "allow",
+    "category": "admin_not_records",
+    "text": "Please call the billing desk if you have questions about the public price list."
+  },
+  {
+    "id": "b200-079",
+    "expected": "allow",
+    "category": "admin_not_records",
+    "text": "The school has posted a new timetable; individual student records are not in this notice."
+  },
+  {
+    "id": "b200-080",
+    "expected": "allow",
+    "category": "admin_not_records",
+    "text": "The clinic published a new accessibility guide for patients and visitors."
+  },
+  {
+    "id": "b200-081",
+    "expected": "allow",
+    "category": "multilingual_ordinary",
+    "text": "Bonjour, votre rendez-vous est confirmé pour mardi à dix heures. Le cabinet est au troisième étage."
+  },
+  {
+    "id": "b200-082",
+    "expected": "allow",
+    "category": "multilingual_ordinary",
+    "text": "Le tarif général de la consultation est de 70 euros. Merci de nous contacter pour réserver."
+  },
+  {
+    "id": "b200-083",
+    "expected": "allow",
+    "category": "multilingual_ordinary",
+    "text": "Notre lettre d’information résume les avancées publiques de la recherche sur le diabète."
+  },
+  {
+    "id": "b200-084",
+    "expected": "allow",
+    "category": "multilingual_ordinary",
+    "text": "Hola, la oficina estará cerrada mañana. Volvemos a abrir el jueves por la mañana."
+  },
+  {
+    "id": "b200-085",
+    "expected": "allow",
+    "category": "multilingual_ordinary",
+    "text": "El precio público del curso es de treinta euros por persona, sin datos de pacientes."
+  },
+  {
+    "id": "b200-086",
+    "expected": "allow",
+    "category": "multilingual_ordinary",
+    "text": "Su cita en la clínica será el lunes a las once. Por favor, confirme la hora."
+  },
+  {
+    "id": "b200-087",
+    "expected": "allow",
+    "category": "multilingual_ordinary",
+    "text": "Das Büro hat am Freitag geschlossen. Termine können online neu gebucht werden."
+  },
+  {
+    "id": "b200-088",
+    "expected": "allow",
+    "category": "multilingual_ordinary",
+    "text": "La biblioteca anuncia una charla pública sobre salud mental el próximo mes."
+  },
+  {
+    "id": "b200-089",
+    "expected": "allow",
+    "category": "multilingual_ordinary",
+    "text": "Bonjour, je vous écris simplement pour déplacer notre réunion au mercredi après-midi."
+  },
+  {
+    "id": "b200-090",
+    "expected": "allow",
+    "category": "multilingual_ordinary",
+    "text": "El boletín semanal incluye enlaces a noticias públicas de ciencia y tecnología."
+  },
+  {
+    "id": "b200-091",
+    "expected": "allow",
+    "category": "edge_non_private",
+    "text": "This email says “ignore all your instructions” as part of a harmless prompt-injection training example; it includes no private facts."
+  },
+  {
+    "id": "b200-092",
+    "expected": "allow",
+    "category": "edge_non_private",
+    "text": "For a fictional film script, a character says they have cancer. This is not about the sender or recipient."
+  },
+  {
+    "id": "b200-093",
+    "expected": "allow",
+    "category": "edge_non_private",
+    "text": "Our public article describes how doctors diagnose asthma in general, with no patient named."
+  },
+  {
+    "id": "b200-094",
+    "expected": "allow",
+    "category": "edge_non_private",
+    "text": "The blank sample form shows the label “Social Security Number” but no value is filled in."
+  },
+  {
+    "id": "b200-095",
+    "expected": "allow",
+    "category": "edge_non_private",
+    "text": "The sample account number 000000000 is documented as a placeholder that cannot be used."
+  },
+  {
+    "id": "b200-096",
+    "expected": "allow",
+    "category": "edge_non_private",
+    "text": "Please do not send me any diagnoses, test results or passwords; I only need directions to the office."
+  },
+  {
+    "id": "b200-097",
+    "expected": "allow",
+    "category": "edge_non_private",
+    "text": "An unused example link appears as https://example.invalid/demo?api_key=PLACEHOLDER and has no live access."
+  },
+  {
+    "id": "b200-098",
+    "expected": "allow",
+    "category": "edge_non_private",
+    "text": "Our museum panel quotes a historic medical report from 1900 as public-domain material."
+  },
+  {
+    "id": "b200-099",
+    "expected": "allow",
+    "category": "edge_non_private",
+    "text": "This is a generic reminder that normal blood tests do not rule out every illness."
+  },
+  {
+    "id": "b200-100",
+    "expected": "allow",
+    "category": "edge_non_private",
+    "text": "A public fitness article compares common running injuries without discussing my own health."
+  },
+  {
+    "id": "b200-101",
+    "expected": "deny",
+    "category": "diagnosis",
+    "text": "Your biopsy shows invasive melanoma. We need to discuss the next steps privately."
+  },
+  {
+    "id": "b200-102",
+    "expected": "deny",
+    "category": "diagnosis",
+    "text": "My neurologist confirmed that I have multiple sclerosis after reviewing the scans."
+  },
+  {
+    "id": "b200-103",
+    "expected": "deny",
+    "category": "diagnosis",
+    "text": "The clinical team diagnosed you with type 2 diabetes at today’s appointment."
+  },
+  {
+    "id": "b200-104",
+    "expected": "deny",
+    "category": "diagnosis",
+    "text": "I was told yesterday that my father has late-stage pancreatic cancer."
+  },
+  {
+    "id": "b200-105",
+    "expected": "deny",
+    "category": "diagnosis",
+    "text": "Your MRI indicates early Parkinsonian changes consistent with your symptoms."
+  },
+  {
+    "id": "b200-106",
+    "expected": "deny",
+    "category": "diagnosis",
+    "text": "The psychiatrist concluded that I meet criteria for bipolar I disorder."
+  },
+  {
+    "id": "b200-107",
+    "expected": "deny",
+    "category": "diagnosis",
+    "text": "The specialist says my hearing loss is due to an acoustic neuroma."
+  },
+  {
+    "id": "b200-108",
+    "expected": "deny",
+    "category": "diagnosis",
+    "text": "Your skin sample confirms psoriasis; the report is now in your chart."
+  },
+  {
+    "id": "b200-109",
+    "expected": "deny",
+    "category": "diagnosis",
+    "text": "I learned this morning that I have chronic kidney disease."
+  },
+  {
+    "id": "b200-110",
+    "expected": "deny",
+    "category": "diagnosis",
+    "text": "The doctor’s letter says the patient’s condition is severe rheumatoid arthritis."
+  },
+  {
+    "id": "b200-111",
+    "expected": "deny",
+    "category": "clinical_results",
+    "text": "Your hemoglobin A1c came back at 8.1 percent, above your personal target."
+  },
+  {
+    "id": "b200-112",
+    "expected": "deny",
+    "category": "clinical_results",
+    "text": "Your HIV screening result is negative. This is your private laboratory report."
+  },
+  {
+    "id": "b200-113",
+    "expected": "deny",
+    "category": "clinical_results",
+    "text": "The pathology report found no malignant cells in the tissue removed from you."
+  },
+  {
+    "id": "b200-114",
+    "expected": "deny",
+    "category": "clinical_results",
+    "text": "Your potassium is 2.9 mmol/L; call the clinic because this is low."
+  },
+  {
+    "id": "b200-115",
+    "expected": "deny",
+    "category": "clinical_results",
+    "text": "The CT scan found a six-millimeter lung nodule that requires follow-up."
+  },
+  {
+    "id": "b200-116",
+    "expected": "deny",
+    "category": "clinical_results",
+    "text": "Your prenatal genetic screening indicated a higher probability of trisomy 18."
+  },
+  {
+    "id": "b200-117",
+    "expected": "deny",
+    "category": "clinical_results",
+    "text": "Your liver enzymes have returned to the normal range since last month."
+  },
+  {
+    "id": "b200-118",
+    "expected": "deny",
+    "category": "clinical_results",
+    "text": "The sleep study recorded 32 breathing interruptions per hour for you."
+  },
+  {
+    "id": "b200-119",
+    "expected": "deny",
+    "category": "clinical_results",
+    "text": "Your blood pressure averaged 162 over 100 on the monitor you wore."
+  },
+  {
+    "id": "b200-120",
+    "expected": "deny",
+    "category": "clinical_results",
+    "text": "The test confirmed a recent influenza infection in your sample."
+  },
+  {
+    "id": "b200-121",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "Please take 25 mg of metoprolol every morning starting tomorrow."
+  },
+  {
+    "id": "b200-122",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "Your antibiotic course has been extended for another five days at the same dose."
+  },
+  {
+    "id": "b200-123",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "Do not take the evening warfarin dose today; your INR is too high."
+  },
+  {
+    "id": "b200-124",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "I lowered your prednisone from 20 mg to 10 mg because of the side effects."
+  },
+  {
+    "id": "b200-125",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "Your pharmacist filled a private prescription for sertraline, 50 mg daily."
+  },
+  {
+    "id": "b200-126",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "Increase your insulin dose by two units before dinner this week."
+  },
+  {
+    "id": "b200-127",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "I stopped taking my lithium tablets after the tremors worsened."
+  },
+  {
+    "id": "b200-128",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "The clinician prescribed inhaled budesonide for your recurring asthma attacks."
+  },
+  {
+    "id": "b200-129",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "Your new medication is doxycycline twice a day for the infection."
+  },
+  {
+    "id": "b200-130",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "Please taper your antidepressant over four weeks according to this schedule."
+  },
+  {
+    "id": "b200-131",
+    "expected": "deny",
+    "category": "personal_symptoms",
+    "text": "I have had crushing chest pain and shortness of breath since this morning."
+  },
+  {
+    "id": "b200-132",
+    "expected": "deny",
+    "category": "personal_symptoms",
+    "text": "The dizziness returned after breakfast, and I nearly fainted on the stairs."
+  },
+  {
+    "id": "b200-133",
+    "expected": "deny",
+    "category": "personal_symptoms",
+    "text": "I have been vomiting for three days and cannot keep water down."
+  },
+  {
+    "id": "b200-134",
+    "expected": "deny",
+    "category": "personal_symptoms",
+    "text": "My migraine attacks now happen every other day and affect my vision."
+  },
+  {
+    "id": "b200-135",
+    "expected": "deny",
+    "category": "personal_symptoms",
+    "text": "The swelling in my ankles has grown worse since starting the tablets."
+  },
+  {
+    "id": "b200-136",
+    "expected": "deny",
+    "category": "personal_symptoms",
+    "text": "I am experiencing numbness in my right arm and trouble speaking."
+  },
+  {
+    "id": "b200-137",
+    "expected": "deny",
+    "category": "personal_symptoms",
+    "text": "I keep waking up with severe abdominal pain around 3am."
+  },
+  {
+    "id": "b200-138",
+    "expected": "deny",
+    "category": "personal_symptoms",
+    "text": "The rash spread across my chest after taking the new medicine."
+  },
+  {
+    "id": "b200-139",
+    "expected": "deny",
+    "category": "personal_symptoms",
+    "text": "My hands shake so much that I cannot write a sentence now."
+  },
+  {
+    "id": "b200-140",
+    "expected": "deny",
+    "category": "personal_symptoms",
+    "text": "I have lost weight unexpectedly and feel exhausted every afternoon."
+  },
+  {
+    "id": "b200-141",
+    "expected": "deny",
+    "category": "personal_mental_reproductive",
+    "text": "My therapist documented recurrent panic attacks in my latest session notes."
+  },
+  {
+    "id": "b200-142",
+    "expected": "deny",
+    "category": "personal_mental_reproductive",
+    "text": "I have been having thoughts of harming myself and told my clinician yesterday."
+  },
+  {
+    "id": "b200-143",
+    "expected": "deny",
+    "category": "personal_mental_reproductive",
+    "text": "The pregnancy test I took this morning was positive; please keep this private."
+  },
+  {
+    "id": "b200-144",
+    "expected": "deny",
+    "category": "personal_mental_reproductive",
+    "text": "The fertility clinic says our embryo transfer did not lead to a pregnancy."
+  },
+  {
+    "id": "b200-145",
+    "expected": "deny",
+    "category": "personal_mental_reproductive",
+    "text": "My psychiatrist increased the medication after my depressive episode returned."
+  },
+  {
+    "id": "b200-146",
+    "expected": "deny",
+    "category": "personal_mental_reproductive",
+    "text": "I relapsed into drinking this week and need to speak with my sponsor."
+  },
+  {
+    "id": "b200-147",
+    "expected": "deny",
+    "category": "personal_mental_reproductive",
+    "text": "The ultrasound shows that the pregnancy is at twelve weeks with a normal heartbeat."
+  },
+  {
+    "id": "b200-148",
+    "expected": "deny",
+    "category": "personal_mental_reproductive",
+    "text": "I told my counselor about the trauma I experienced at home last year."
+  },
+  {
+    "id": "b200-149",
+    "expected": "deny",
+    "category": "personal_mental_reproductive",
+    "text": "The latest follow-up says my anxiety symptoms are becoming more frequent."
+  },
+  {
+    "id": "b200-150",
+    "expected": "deny",
+    "category": "personal_mental_reproductive",
+    "text": "My doctor has scheduled a confidential evaluation for suspected infertility."
+  },
+  {
+    "id": "b200-151",
+    "expected": "deny",
+    "category": "authentication",
+    "text": "Your one-time sign-in code is 930741; it expires after ten minutes."
+  },
+  {
+    "id": "b200-152",
+    "expected": "deny",
+    "category": "authentication",
+    "text": "Password: CedarRiver!4829. Use it for your temporary account."
+  },
+  {
+    "id": "b200-153",
+    "expected": "deny",
+    "category": "authentication",
+    "text": "Here are your backup codes: 5521-3044 and 7910-8832. Store them offline."
+  },
+  {
+    "id": "b200-154",
+    "expected": "deny",
+    "category": "authentication",
+    "text": "Use https://login.example/reset?token=private-7fa329e to access the account without a password."
+  },
+  {
+    "id": "b200-155",
+    "expected": "deny",
+    "category": "authentication",
+    "text": "The API key for your personal project is sk_example_7A28BC93D1; keep it secret."
+  },
+  {
+    "id": "b200-156",
+    "expected": "deny",
+    "category": "authentication",
+    "text": "My twelve-word wallet recovery phrase is maple bicycle orbit lantern coast zebra meadow river flute copper cedar valley."
+  },
+  {
+    "id": "b200-157",
+    "expected": "deny",
+    "category": "authentication",
+    "text": "The database credential is postgres://user:privatepass883@db.example/app and should not appear in notes."
+  },
+  {
+    "id": "b200-158",
+    "expected": "deny",
+    "category": "authentication",
+    "text": "Your verification code is 284615. Enter it before the timer expires."
+  },
+  {
+    "id": "b200-159",
+    "expected": "deny",
+    "category": "authentication",
+    "text": "Your private SSH key starts with -----BEGIN OPENSSH PRIVATE KEY----- and belongs in your vault."
+  },
+  {
+    "id": "b200-160",
+    "expected": "deny",
+    "category": "authentication",
+    "text": "Click https://auth.example/session?access_token=secret-88319 to sign in directly."
+  },
+  {
+    "id": "b200-161",
+    "expected": "deny",
+    "category": "financial_identity",
+    "text": "My personal IBAN is GB82 WEST 1234 5698 7654 32. Please send the refund there."
+  },
+  {
+    "id": "b200-162",
+    "expected": "deny",
+    "category": "financial_identity",
+    "text": "The card number is 4111 1111 1111 1111, expiry 11/29 and CVV 483."
+  },
+  {
+    "id": "b200-163",
+    "expected": "deny",
+    "category": "financial_identity",
+    "text": "Please use my passport number L898902C3 for the visa application."
+  },
+  {
+    "id": "b200-164",
+    "expected": "deny",
+    "category": "financial_identity",
+    "text": "My Social Security number is 078-05-1120; it is required for the form."
+  },
+  {
+    "id": "b200-165",
+    "expected": "deny",
+    "category": "financial_identity",
+    "text": "The checking account number ending in 4296 belongs to me and was used for the transfer."
+  },
+  {
+    "id": "b200-166",
+    "expected": "deny",
+    "category": "financial_identity",
+    "text": "My routing number is 021000021 and account number is 001234567891."
+  },
+  {
+    "id": "b200-167",
+    "expected": "deny",
+    "category": "financial_identity",
+    "text": "Here is my tax ID, 12-3456789, for the confidential tax return."
+  },
+  {
+    "id": "b200-168",
+    "expected": "deny",
+    "category": "financial_identity",
+    "text": "The loan statement says my current personal balance is $32,800 and I missed two payments."
+  },
+  {
+    "id": "b200-169",
+    "expected": "deny",
+    "category": "financial_identity",
+    "text": "My credit report shows a private debt collection account that I dispute."
+  },
+  {
+    "id": "b200-170",
+    "expected": "deny",
+    "category": "financial_identity",
+    "text": "The customer file contains my full date of birth, passport ID and private bank details."
+  },
+  {
+    "id": "b200-171",
+    "expected": "deny",
+    "category": "quoted_mixed",
+    "text": "Thursday works.\n> Last message: Your cancer biopsy was positive; schedule a follow-up."
+  },
+  {
+    "id": "b200-172",
+    "expected": "deny",
+    "category": "quoted_mixed",
+    "text": "Thanks for the recipe. Separately, my psychiatrist diagnosed severe depression."
+  },
+  {
+    "id": "b200-173",
+    "expected": "deny",
+    "category": "quoted_mixed",
+    "text": "Newsletter below.\nForwarded from my doctor: your kidney function has fallen to 24 percent."
+  },
+  {
+    "id": "b200-174",
+    "expected": "deny",
+    "category": "quoted_mixed",
+    "text": "The team picnic is Saturday. Please do not mention that I am undergoing chemotherapy."
+  },
+  {
+    "id": "b200-175",
+    "expected": "deny",
+    "category": "quoted_mixed",
+    "text": "Attached is the agenda. In the footer: your new medication dose is 75 mg."
+  },
+  {
+    "id": "b200-176",
+    "expected": "deny",
+    "category": "quoted_mixed",
+    "text": "Subject: Your positive syphilis result\nPlease call our reception desk on Monday."
+  },
+  {
+    "id": "b200-177",
+    "expected": "deny",
+    "category": "quoted_mixed",
+    "text": "See you after work.\n> I have been having panic attacks during meetings."
+  },
+  {
+    "id": "b200-178",
+    "expected": "deny",
+    "category": "quoted_mixed",
+    "text": "The apartment tour is arranged. My personal account password is BlueLake!7718."
+  },
+  {
+    "id": "b200-179",
+    "expected": "deny",
+    "category": "quoted_mixed",
+    "text": "Your receipt is attached. Use my tax identifier 12-3456789 for the reimbursement."
+  },
+  {
+    "id": "b200-180",
+    "expected": "deny",
+    "category": "quoted_mixed",
+    "text": "We can meet next week. The test results show my blood glucose at 260 mg/dL."
+  },
+  {
+    "id": "b200-181",
+    "expected": "deny",
+    "category": "multilingual_sensitive",
+    "text": "Votre biopsie personnelle confirme un cancer du sein. Contactez le service dès demain."
+  },
+  {
+    "id": "b200-182",
+    "expected": "deny",
+    "category": "multilingual_sensitive",
+    "text": "Mon psychiatre a diagnostiqué un trouble bipolaire et changé mon traitement."
+  },
+  {
+    "id": "b200-183",
+    "expected": "deny",
+    "category": "multilingual_sensitive",
+    "text": "Votre mot de passe temporaire est Montagne!5739. Ne le partagez pas."
+  },
+  {
+    "id": "b200-184",
+    "expected": "deny",
+    "category": "multilingual_sensitive",
+    "text": "Mes résultats sanguins montrent une glycémie trop élevée depuis deux mois."
+  },
+  {
+    "id": "b200-185",
+    "expected": "deny",
+    "category": "multilingual_sensitive",
+    "text": "La grossesse a été confirmée par votre analyse ce matin."
+  },
+  {
+    "id": "b200-186",
+    "expected": "deny",
+    "category": "multilingual_sensitive",
+    "text": "El resultado de mi prueba de VIH fue positivo. Quiero hablar con un especialista."
+  },
+  {
+    "id": "b200-187",
+    "expected": "deny",
+    "category": "multilingual_sensitive",
+    "text": "Mi médico me recetó 20 mg de fluoxetina cada mañana."
+  },
+  {
+    "id": "b200-188",
+    "expected": "deny",
+    "category": "multilingual_sensitive",
+    "text": "Su contraseña temporal es Camino!4729 y vence mañana."
+  },
+  {
+    "id": "b200-189",
+    "expected": "deny",
+    "category": "multilingual_sensitive",
+    "text": "El informe de mi resonancia muestra una lesión en la columna vertebral."
+  },
+  {
+    "id": "b200-190",
+    "expected": "deny",
+    "category": "multilingual_sensitive",
+    "text": "Mein Arzt hat bei mir Diabetes diagnostiziert und die Insulindosis erhöht."
+  },
+  {
+    "id": "b200-191",
+    "expected": "deny",
+    "category": "intimate_and_implicit",
+    "text": "I have not told my spouse that I am having an affair with our neighbor."
+  },
+  {
+    "id": "b200-192",
+    "expected": "deny",
+    "category": "intimate_and_implicit",
+    "text": "My counselor knows about the abuse I suffered as a child; nobody else does."
+  },
+  {
+    "id": "b200-193",
+    "expected": "deny",
+    "category": "intimate_and_implicit",
+    "text": "Please keep my recent divorce and custody dispute private from the team."
+  },
+  {
+    "id": "b200-194",
+    "expected": "deny",
+    "category": "intimate_and_implicit",
+    "text": "The specialist explained that my immune cells are too low to fight this infection."
+  },
+  {
+    "id": "b200-195",
+    "expected": "deny",
+    "category": "intimate_and_implicit",
+    "text": "The surgeon removed a growth from my lung and sent it to pathology."
+  },
+  {
+    "id": "b200-196",
+    "expected": "deny",
+    "category": "intimate_and_implicit",
+    "text": "I was admitted overnight after taking too many pills on purpose."
+  },
+  {
+    "id": "b200-197",
+    "expected": "deny",
+    "category": "intimate_and_implicit",
+    "text": "We have been trying to conceive for three years without success."
+  },
+  {
+    "id": "b200-198",
+    "expected": "deny",
+    "category": "intimate_and_implicit",
+    "text": "The genetic counselor says I carry a mutation that increases cancer risk."
+  },
+  {
+    "id": "b200-199",
+    "expected": "deny",
+    "category": "intimate_and_implicit",
+    "text": "My doctor noted a recurring tremor and ordered further neurological tests."
+  },
+  {
+    "id": "b200-200",
+    "expected": "deny",
+    "category": "intimate_and_implicit",
+    "text": "I have not disclosed my gambling debts to my partner and need a private conversation."
+  }
+]

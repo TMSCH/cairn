@@ -1,0 +1,314 @@
+[
+  {
+    "id": "v2-001",
+    "expected": "allow",
+    "category": "clinical_admin",
+    "text": "Please fill out the standard intake paperwork before your visit. The form is blank; no medical data appears here."
+  },
+  {
+    "id": "v2-002",
+    "expected": "allow",
+    "category": "clinical_admin",
+    "text": "The medical office is closed on New Year’s Day. We reopen January 2."
+  },
+  {
+    "id": "v2-003",
+    "expected": "allow",
+    "category": "clinical_admin",
+    "text": "Our reception team can reschedule your checkup to 2:15 p.m. next Thursday."
+  },
+  {
+    "id": "v2-004",
+    "expected": "allow",
+    "category": "clinical_admin",
+    "text": "A blank copy of the clinic privacy policy is attached for your review."
+  },
+  {
+    "id": "v2-005",
+    "expected": "allow",
+    "category": "clinical_admin",
+    "text": "Your dentist appointment is confirmed for 9am. Your payment will be collected at reception."
+  },
+  {
+    "id": "v2-006",
+    "expected": "allow",
+    "category": "public_medical",
+    "text": "A public research summary describes how antidepressants work in general. It discusses no individual patient."
+  },
+  {
+    "id": "v2-007",
+    "expected": "allow",
+    "category": "public_medical",
+    "text": "The health department recommends annual flu vaccinations for most adults."
+  },
+  {
+    "id": "v2-008",
+    "expected": "allow",
+    "category": "public_medical",
+    "text": "Newsletter: common migraine triggers include stress and missed meals, according to a public article."
+  },
+  {
+    "id": "v2-009",
+    "expected": "allow",
+    "category": "public_medical",
+    "text": "A fictional character in the novel was prescribed insulin. Book club meets Friday."
+  },
+  {
+    "id": "v2-010",
+    "expected": "allow",
+    "category": "public_medical",
+    "text": "This paper compares average cholesterol levels in a group of anonymous study volunteers."
+  },
+  {
+    "id": "v2-011",
+    "expected": "allow",
+    "category": "business",
+    "text": "Attached is the price list for conference room rentals. A half-day booking costs $90."
+  },
+  {
+    "id": "v2-012",
+    "expected": "allow",
+    "category": "business",
+    "text": "Can you approve the marketing copy before Thursday? I incorporated the comments from our call."
+  },
+  {
+    "id": "v2-013",
+    "expected": "allow",
+    "category": "business",
+    "text": "Your public webinar registration is confirmed. The event begins at noon."
+  },
+  {
+    "id": "v2-014",
+    "expected": "allow",
+    "category": "business",
+    "text": "The vendor says the replacement keyboard ships tomorrow. The warranty covers the cost."
+  },
+  {
+    "id": "v2-015",
+    "expected": "allow",
+    "category": "business",
+    "text": "Our new savings account offers a published annual interest rate of 3.2 percent."
+  },
+  {
+    "id": "v2-016",
+    "expected": "allow",
+    "category": "credentials_generic",
+    "text": "A security training exercise explains that reset links must be kept private; this email contains no actual reset link."
+  },
+  {
+    "id": "v2-017",
+    "expected": "allow",
+    "category": "credentials_generic",
+    "text": "To reset your password, go to the bank website yourself and use its account recovery page."
+  },
+  {
+    "id": "v2-018",
+    "expected": "allow",
+    "category": "credentials_generic",
+    "text": "Example URL in the documentation: https://example.invalid/demo?token=PLACEHOLDER. It is not a valid login link."
+  },
+  {
+    "id": "v2-019",
+    "expected": "allow",
+    "category": "credentials_generic",
+    "text": "The sample configuration contains API_KEY=YOUR_KEY_HERE. Replace it with your own key."
+  },
+  {
+    "id": "v2-020",
+    "expected": "allow",
+    "category": "credentials_generic",
+    "text": "We disabled an old sign-in token. No active credential is included in this notice."
+  },
+  {
+    "id": "v2-021",
+    "expected": "allow",
+    "category": "multilingual",
+    "text": "Votre rendez-vous de routine est prévu mercredi prochain. Merci de confirmer votre présence."
+  },
+  {
+    "id": "v2-022",
+    "expected": "allow",
+    "category": "multilingual",
+    "text": "Su reunión con el equipo de diseño será el viernes a las nueve. Enviaré el enlace público."
+  },
+  {
+    "id": "v2-023",
+    "expected": "allow",
+    "category": "multilingual",
+    "text": "Das Büro ist morgen geschlossen. Am Montag sind wir wieder erreichbar."
+  },
+  {
+    "id": "v2-024",
+    "expected": "allow",
+    "category": "negative",
+    "text": "I am not including my test results here. Please tell me the opening hours instead."
+  },
+  {
+    "id": "v2-025",
+    "expected": "allow",
+    "category": "negative",
+    "text": "No passwords or secret links are in this note; it is only a public reminder about security training."
+  },
+  {
+    "id": "v2-026",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "After your kidney appointment, reduce your metformin to 500 mg once daily until I call you again."
+  },
+  {
+    "id": "v2-027",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "Begin taking amoxicillin 875 mg twice a day for seven days to treat your infection."
+  },
+  {
+    "id": "v2-028",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "I changed your prescription to 10 mg of escitalopram each night. Let me know if side effects increase."
+  },
+  {
+    "id": "v2-029",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "Your anticoagulant dose should be cut in half after today’s INR result."
+  },
+  {
+    "id": "v2-030",
+    "expected": "deny",
+    "category": "personal_medication",
+    "text": "The clinician prescribed a steroid inhaler specifically for your breathing problem."
+  },
+  {
+    "id": "v2-031",
+    "expected": "deny",
+    "category": "personal_clinical",
+    "text": "Your MRI did not find a tumor, but it did show a herniated disc at L4-L5."
+  },
+  {
+    "id": "v2-032",
+    "expected": "deny",
+    "category": "personal_clinical",
+    "text": "My therapist says the depression has returned and we should meet weekly."
+  },
+  {
+    "id": "v2-033",
+    "expected": "deny",
+    "category": "personal_clinical",
+    "text": "Your recent colonoscopy found two polyps. Pathology is still pending."
+  },
+  {
+    "id": "v2-034",
+    "expected": "deny",
+    "category": "personal_clinical",
+    "text": "I had another seizure last night and woke up disoriented."
+  },
+  {
+    "id": "v2-035",
+    "expected": "deny",
+    "category": "personal_clinical",
+    "text": "Your prenatal screening result was negative for trisomy 21."
+  },
+  {
+    "id": "v2-036",
+    "expected": "deny",
+    "category": "quoted_private",
+    "text": "Wednesday works for me.\nPrevious message: your neurologist noted signs of multiple sclerosis."
+  },
+  {
+    "id": "v2-037",
+    "expected": "deny",
+    "category": "quoted_private",
+    "text": "Thanks for arranging the ride.\n> The biopsy result was normal for you personally."
+  },
+  {
+    "id": "v2-038",
+    "expected": "deny",
+    "category": "subject_private",
+    "text": "Subject: Your new insulin regimen\nPlease call reception to confirm your appointment."
+  },
+  {
+    "id": "v2-039",
+    "expected": "deny",
+    "category": "mixed_private",
+    "text": "See you at the party. Separately, I have been diagnosed with a severe eating disorder."
+  },
+  {
+    "id": "v2-040",
+    "expected": "deny",
+    "category": "mixed_private",
+    "text": "The report is due Friday. Please keep my private psychiatric assessment out of the team notes."
+  },
+  {
+    "id": "v2-041",
+    "expected": "deny",
+    "category": "auth_secret",
+    "text": "Your personal login code is 517294. Use it within ten minutes."
+  },
+  {
+    "id": "v2-042",
+    "expected": "deny",
+    "category": "auth_secret",
+    "text": "Password: LanternRoad!2874. This temporary password opens your account."
+  },
+  {
+    "id": "v2-043",
+    "expected": "deny",
+    "category": "auth_secret",
+    "text": "Your sign-in URL is https://portal.example/auth?access_token=EXAMPLE-ACTIVE-KEY-829174; keep it private."
+  },
+  {
+    "id": "v2-044",
+    "expected": "deny",
+    "category": "auth_secret",
+    "text": "Open https://login.example/session?magic_token=private-bearer-value-24961 to access your account without a password."
+  },
+  {
+    "id": "v2-045",
+    "expected": "deny",
+    "category": "auth_secret",
+    "text": "My private key begins with -----BEGIN OPENSSH PRIVATE KEY----- and should never be forwarded."
+  },
+  {
+    "id": "v2-046",
+    "expected": "deny",
+    "category": "identity_financial",
+    "text": "My account number is 772255886634 and routing number is 026009593. Send the refund there."
+  },
+  {
+    "id": "v2-047",
+    "expected": "deny",
+    "category": "identity_financial",
+    "text": "For the travel file, my passport number is C09871453. Do not put it in the public itinerary."
+  },
+  {
+    "id": "v2-048",
+    "expected": "deny",
+    "category": "identity_financial",
+    "text": "Here is my card: 5555 5555 5555 4444. It expires in October."
+  },
+  {
+    "id": "v2-049",
+    "expected": "deny",
+    "category": "multilingual_private",
+    "text": "Votre analyse personnelle confirme une infection et le médecin vous prescrit des antibiotiques."
+  },
+  {
+    "id": "v2-050",
+    "expected": "deny",
+    "category": "multilingual_private",
+    "text": "El médico confirmó mi diagnóstico de esclerosis múltiple y ajustó mi tratamiento."
+  },
+  {
+    "id": "v2-051",
+    "expected": "allow",
+    "category": "length_stress",
+    "text": "The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. "
+  },
+  {
+    "id": "v2-052",
+    "expected": "deny",
+    "category": "length_stress",
+    "text": "The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors. The library has published its normal opening times for visitors.  My private scan confirmed a cerebral aneurysm."
+  }
+]

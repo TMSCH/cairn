@@ -1,0 +1,1424 @@
+{
+  "model": "knowledgator/gliclass-instruct-edge-v1.0",
+  "revision": "727be8a417f6a7718e591b025e07054c146d8139",
+  "backend": "gliclass",
+  "batch_size": 8,
+  "threads": 2,
+  "platform": "darwin",
+  "corpus_sha256": "48ec12335f9856490e673683e44f18fce6b8a597af4d3399e3cbc4cdd636bd1b",
+  "policy_sha256": "52a9e0e946f880b056d081267e00fbbadb9caa3622c60537200667294fd51140",
+  "runner_sha256": "5fb5ec7a416953b3b4f612af924cba6b95c791de6c5e9a1d698d8255afc83b97",
+  "load_seconds": 0.16642933385446668,
+  "batch_total_seconds": 2.7584491670131683,
+  "emails_per_second": 72.50450810973572,
+  "sequential_sample_size": 24,
+  "sequential_median_seconds": 0.013361771125346422,
+  "peak_rss_mib": 645.609375,
+  "allow_count": 100,
+  "deny_count": 100,
+  "sensitive_disclosed": 0,
+  "ordinary_allowed": 0,
+  "withheld_uncertain": 0,
+  "rows": [
+    {
+      "id": "b200-001",
+      "category": "clinic_logistics",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.02728796872543171
+    },
+    {
+      "id": "b200-002",
+      "category": "clinic_logistics",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.02728796872543171
+    },
+    {
+      "id": "b200-003",
+      "category": "clinic_logistics",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.02728796872543171
+    },
+    {
+      "id": "b200-004",
+      "category": "clinic_logistics",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.02728796872543171
+    },
+    {
+      "id": "b200-005",
+      "category": "clinic_logistics",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.02728796872543171
+    },
+    {
+      "id": "b200-006",
+      "category": "clinic_logistics",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.02728796872543171
+    },
+    {
+      "id": "b200-007",
+      "category": "clinic_logistics",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.02728796872543171
+    },
+    {
+      "id": "b200-008",
+      "category": "clinic_logistics",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.02728796872543171
+    },
+    {
+      "id": "b200-009",
+      "category": "clinic_logistics",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013111369917169213
+    },
+    {
+      "id": "b200-010",
+      "category": "clinic_logistics",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013111369917169213
+    },
+    {
+      "id": "b200-011",
+      "category": "public_health",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013111369917169213
+    },
+    {
+      "id": "b200-012",
+      "category": "public_health",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013111369917169213
+    },
+    {
+      "id": "b200-013",
+      "category": "public_health",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013111369917169213
+    },
+    {
+      "id": "b200-014",
+      "category": "public_health",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013111369917169213
+    },
+    {
+      "id": "b200-015",
+      "category": "public_health",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013111369917169213
+    },
+    {
+      "id": "b200-016",
+      "category": "public_health",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013111369917169213
+    },
+    {
+      "id": "b200-017",
+      "category": "public_health",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013257005251944065
+    },
+    {
+      "id": "b200-018",
+      "category": "public_health",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013257005251944065
+    },
+    {
+      "id": "b200-019",
+      "category": "public_health",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013257005251944065
+    },
+    {
+      "id": "b200-020",
+      "category": "public_health",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013257005251944065
+    },
+    {
+      "id": "b200-021",
+      "category": "generic_security",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013257005251944065
+    },
+    {
+      "id": "b200-022",
+      "category": "generic_security",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013257005251944065
+    },
+    {
+      "id": "b200-023",
+      "category": "generic_security",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013257005251944065
+    },
+    {
+      "id": "b200-024",
+      "category": "generic_security",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013257005251944065
+    },
+    {
+      "id": "b200-025",
+      "category": "generic_security",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013439411530271173
+    },
+    {
+      "id": "b200-026",
+      "category": "generic_security",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013439411530271173
+    },
+    {
+      "id": "b200-027",
+      "category": "generic_security",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013439411530271173
+    },
+    {
+      "id": "b200-028",
+      "category": "generic_security",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013439411530271173
+    },
+    {
+      "id": "b200-029",
+      "category": "generic_security",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013439411530271173
+    },
+    {
+      "id": "b200-030",
+      "category": "generic_security",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013439411530271173
+    },
+    {
+      "id": "b200-031",
+      "category": "generic_finance",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013439411530271173
+    },
+    {
+      "id": "b200-032",
+      "category": "generic_finance",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013439411530271173
+    },
+    {
+      "id": "b200-033",
+      "category": "generic_finance",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012894640618469566
+    },
+    {
+      "id": "b200-034",
+      "category": "generic_finance",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012894640618469566
+    },
+    {
+      "id": "b200-035",
+      "category": "generic_finance",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012894640618469566
+    },
+    {
+      "id": "b200-036",
+      "category": "generic_finance",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012894640618469566
+    },
+    {
+      "id": "b200-037",
+      "category": "generic_finance",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012894640618469566
+    },
+    {
+      "id": "b200-038",
+      "category": "generic_finance",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012894640618469566
+    },
+    {
+      "id": "b200-039",
+      "category": "generic_finance",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012894640618469566
+    },
+    {
+      "id": "b200-040",
+      "category": "generic_finance",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012894640618469566
+    },
+    {
+      "id": "b200-041",
+      "category": "work_and_school",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013434182212222368
+    },
+    {
+      "id": "b200-042",
+      "category": "work_and_school",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013434182212222368
+    },
+    {
+      "id": "b200-043",
+      "category": "work_and_school",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013434182212222368
+    },
+    {
+      "id": "b200-044",
+      "category": "work_and_school",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013434182212222368
+    },
+    {
+      "id": "b200-045",
+      "category": "work_and_school",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013434182212222368
+    },
+    {
+      "id": "b200-046",
+      "category": "work_and_school",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013434182212222368
+    },
+    {
+      "id": "b200-047",
+      "category": "work_and_school",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013434182212222368
+    },
+    {
+      "id": "b200-048",
+      "category": "work_and_school",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013434182212222368
+    },
+    {
+      "id": "b200-049",
+      "category": "work_and_school",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013238312443718314
+    },
+    {
+      "id": "b200-050",
+      "category": "work_and_school",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013238312443718314
+    },
+    {
+      "id": "b200-051",
+      "category": "personal_daily",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013238312443718314
+    },
+    {
+      "id": "b200-052",
+      "category": "personal_daily",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013238312443718314
+    },
+    {
+      "id": "b200-053",
+      "category": "personal_daily",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013238312443718314
+    },
+    {
+      "id": "b200-054",
+      "category": "personal_daily",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013238312443718314
+    },
+    {
+      "id": "b200-055",
+      "category": "personal_daily",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013238312443718314
+    },
+    {
+      "id": "b200-056",
+      "category": "personal_daily",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013238312443718314
+    },
+    {
+      "id": "b200-057",
+      "category": "personal_daily",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01331694790860638
+    },
+    {
+      "id": "b200-058",
+      "category": "personal_daily",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01331694790860638
+    },
+    {
+      "id": "b200-059",
+      "category": "personal_daily",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01331694790860638
+    },
+    {
+      "id": "b200-060",
+      "category": "personal_daily",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01331694790860638
+    },
+    {
+      "id": "b200-061",
+      "category": "newsletter_links",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01331694790860638
+    },
+    {
+      "id": "b200-062",
+      "category": "newsletter_links",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01331694790860638
+    },
+    {
+      "id": "b200-063",
+      "category": "newsletter_links",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01331694790860638
+    },
+    {
+      "id": "b200-064",
+      "category": "newsletter_links",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01331694790860638
+    },
+    {
+      "id": "b200-065",
+      "category": "newsletter_links",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01277603127527982
+    },
+    {
+      "id": "b200-066",
+      "category": "newsletter_links",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01277603127527982
+    },
+    {
+      "id": "b200-067",
+      "category": "newsletter_links",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01277603127527982
+    },
+    {
+      "id": "b200-068",
+      "category": "newsletter_links",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01277603127527982
+    },
+    {
+      "id": "b200-069",
+      "category": "newsletter_links",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01277603127527982
+    },
+    {
+      "id": "b200-070",
+      "category": "newsletter_links",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01277603127527982
+    },
+    {
+      "id": "b200-071",
+      "category": "admin_not_records",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01277603127527982
+    },
+    {
+      "id": "b200-072",
+      "category": "admin_not_records",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01277603127527982
+    },
+    {
+      "id": "b200-073",
+      "category": "admin_not_records",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012282703071832657
+    },
+    {
+      "id": "b200-074",
+      "category": "admin_not_records",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012282703071832657
+    },
+    {
+      "id": "b200-075",
+      "category": "admin_not_records",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012282703071832657
+    },
+    {
+      "id": "b200-076",
+      "category": "admin_not_records",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012282703071832657
+    },
+    {
+      "id": "b200-077",
+      "category": "admin_not_records",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012282703071832657
+    },
+    {
+      "id": "b200-078",
+      "category": "admin_not_records",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012282703071832657
+    },
+    {
+      "id": "b200-079",
+      "category": "admin_not_records",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012282703071832657
+    },
+    {
+      "id": "b200-080",
+      "category": "admin_not_records",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012282703071832657
+    },
+    {
+      "id": "b200-081",
+      "category": "multilingual_ordinary",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014048400975298136
+    },
+    {
+      "id": "b200-082",
+      "category": "multilingual_ordinary",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014048400975298136
+    },
+    {
+      "id": "b200-083",
+      "category": "multilingual_ordinary",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014048400975298136
+    },
+    {
+      "id": "b200-084",
+      "category": "multilingual_ordinary",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014048400975298136
+    },
+    {
+      "id": "b200-085",
+      "category": "multilingual_ordinary",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014048400975298136
+    },
+    {
+      "id": "b200-086",
+      "category": "multilingual_ordinary",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014048400975298136
+    },
+    {
+      "id": "b200-087",
+      "category": "multilingual_ordinary",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014048400975298136
+    },
+    {
+      "id": "b200-088",
+      "category": "multilingual_ordinary",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014048400975298136
+    },
+    {
+      "id": "b200-089",
+      "category": "multilingual_ordinary",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01328625512542203
+    },
+    {
+      "id": "b200-090",
+      "category": "multilingual_ordinary",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01328625512542203
+    },
+    {
+      "id": "b200-091",
+      "category": "edge_non_private",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01328625512542203
+    },
+    {
+      "id": "b200-092",
+      "category": "edge_non_private",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01328625512542203
+    },
+    {
+      "id": "b200-093",
+      "category": "edge_non_private",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01328625512542203
+    },
+    {
+      "id": "b200-094",
+      "category": "edge_non_private",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01328625512542203
+    },
+    {
+      "id": "b200-095",
+      "category": "edge_non_private",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01328625512542203
+    },
+    {
+      "id": "b200-096",
+      "category": "edge_non_private",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01328625512542203
+    },
+    {
+      "id": "b200-097",
+      "category": "edge_non_private",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013309885340277106
+    },
+    {
+      "id": "b200-098",
+      "category": "edge_non_private",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013309885340277106
+    },
+    {
+      "id": "b200-099",
+      "category": "edge_non_private",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013309885340277106
+    },
+    {
+      "id": "b200-100",
+      "category": "edge_non_private",
+      "expected": "allow",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013309885340277106
+    },
+    {
+      "id": "b200-101",
+      "category": "diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013309885340277106
+    },
+    {
+      "id": "b200-102",
+      "category": "diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013309885340277106
+    },
+    {
+      "id": "b200-103",
+      "category": "diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013309885340277106
+    },
+    {
+      "id": "b200-104",
+      "category": "diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.013309885340277106
+    },
+    {
+      "id": "b200-105",
+      "category": "diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012434984382707626
+    },
+    {
+      "id": "b200-106",
+      "category": "diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012434984382707626
+    },
+    {
+      "id": "b200-107",
+      "category": "diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012434984382707626
+    },
+    {
+      "id": "b200-108",
+      "category": "diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012434984382707626
+    },
+    {
+      "id": "b200-109",
+      "category": "diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012434984382707626
+    },
+    {
+      "id": "b200-110",
+      "category": "diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012434984382707626
+    },
+    {
+      "id": "b200-111",
+      "category": "clinical_results",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012434984382707626
+    },
+    {
+      "id": "b200-112",
+      "category": "clinical_results",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012434984382707626
+    },
+    {
+      "id": "b200-113",
+      "category": "clinical_results",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012643567752093077
+    },
+    {
+      "id": "b200-114",
+      "category": "clinical_results",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012643567752093077
+    },
+    {
+      "id": "b200-115",
+      "category": "clinical_results",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012643567752093077
+    },
+    {
+      "id": "b200-116",
+      "category": "clinical_results",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012643567752093077
+    },
+    {
+      "id": "b200-117",
+      "category": "clinical_results",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012643567752093077
+    },
+    {
+      "id": "b200-118",
+      "category": "clinical_results",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012643567752093077
+    },
+    {
+      "id": "b200-119",
+      "category": "clinical_results",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012643567752093077
+    },
+    {
+      "id": "b200-120",
+      "category": "clinical_results",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012643567752093077
+    },
+    {
+      "id": "b200-121",
+      "category": "personal_medication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012479400960728526
+    },
+    {
+      "id": "b200-122",
+      "category": "personal_medication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012479400960728526
+    },
+    {
+      "id": "b200-123",
+      "category": "personal_medication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012479400960728526
+    },
+    {
+      "id": "b200-124",
+      "category": "personal_medication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012479400960728526
+    },
+    {
+      "id": "b200-125",
+      "category": "personal_medication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012479400960728526
+    },
+    {
+      "id": "b200-126",
+      "category": "personal_medication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012479400960728526
+    },
+    {
+      "id": "b200-127",
+      "category": "personal_medication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012479400960728526
+    },
+    {
+      "id": "b200-128",
+      "category": "personal_medication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012479400960728526
+    },
+    {
+      "id": "b200-129",
+      "category": "personal_medication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012866572884377092
+    },
+    {
+      "id": "b200-130",
+      "category": "personal_medication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012866572884377092
+    },
+    {
+      "id": "b200-131",
+      "category": "personal_symptoms",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012866572884377092
+    },
+    {
+      "id": "b200-132",
+      "category": "personal_symptoms",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012866572884377092
+    },
+    {
+      "id": "b200-133",
+      "category": "personal_symptoms",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012866572884377092
+    },
+    {
+      "id": "b200-134",
+      "category": "personal_symptoms",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012866572884377092
+    },
+    {
+      "id": "b200-135",
+      "category": "personal_symptoms",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012866572884377092
+    },
+    {
+      "id": "b200-136",
+      "category": "personal_symptoms",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012866572884377092
+    },
+    {
+      "id": "b200-137",
+      "category": "personal_symptoms",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01342515111900866
+    },
+    {
+      "id": "b200-138",
+      "category": "personal_symptoms",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01342515111900866
+    },
+    {
+      "id": "b200-139",
+      "category": "personal_symptoms",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01342515111900866
+    },
+    {
+      "id": "b200-140",
+      "category": "personal_symptoms",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01342515111900866
+    },
+    {
+      "id": "b200-141",
+      "category": "personal_mental_reproductive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01342515111900866
+    },
+    {
+      "id": "b200-142",
+      "category": "personal_mental_reproductive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01342515111900866
+    },
+    {
+      "id": "b200-143",
+      "category": "personal_mental_reproductive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01342515111900866
+    },
+    {
+      "id": "b200-144",
+      "category": "personal_mental_reproductive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01342515111900866
+    },
+    {
+      "id": "b200-145",
+      "category": "personal_mental_reproductive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012628489639610052
+    },
+    {
+      "id": "b200-146",
+      "category": "personal_mental_reproductive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012628489639610052
+    },
+    {
+      "id": "b200-147",
+      "category": "personal_mental_reproductive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012628489639610052
+    },
+    {
+      "id": "b200-148",
+      "category": "personal_mental_reproductive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012628489639610052
+    },
+    {
+      "id": "b200-149",
+      "category": "personal_mental_reproductive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012628489639610052
+    },
+    {
+      "id": "b200-150",
+      "category": "personal_mental_reproductive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012628489639610052
+    },
+    {
+      "id": "b200-151",
+      "category": "authentication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012628489639610052
+    },
+    {
+      "id": "b200-152",
+      "category": "authentication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012628489639610052
+    },
+    {
+      "id": "b200-153",
+      "category": "authentication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012937229301314801
+    },
+    {
+      "id": "b200-154",
+      "category": "authentication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012937229301314801
+    },
+    {
+      "id": "b200-155",
+      "category": "authentication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012937229301314801
+    },
+    {
+      "id": "b200-156",
+      "category": "authentication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012937229301314801
+    },
+    {
+      "id": "b200-157",
+      "category": "authentication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012937229301314801
+    },
+    {
+      "id": "b200-158",
+      "category": "authentication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012937229301314801
+    },
+    {
+      "id": "b200-159",
+      "category": "authentication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012937229301314801
+    },
+    {
+      "id": "b200-160",
+      "category": "authentication",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012937229301314801
+    },
+    {
+      "id": "b200-161",
+      "category": "financial_identity",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014668281248304993
+    },
+    {
+      "id": "b200-162",
+      "category": "financial_identity",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014668281248304993
+    },
+    {
+      "id": "b200-163",
+      "category": "financial_identity",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014668281248304993
+    },
+    {
+      "id": "b200-164",
+      "category": "financial_identity",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014668281248304993
+    },
+    {
+      "id": "b200-165",
+      "category": "financial_identity",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014668281248304993
+    },
+    {
+      "id": "b200-166",
+      "category": "financial_identity",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014668281248304993
+    },
+    {
+      "id": "b200-167",
+      "category": "financial_identity",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014668281248304993
+    },
+    {
+      "id": "b200-168",
+      "category": "financial_identity",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.014668281248304993
+    },
+    {
+      "id": "b200-169",
+      "category": "financial_identity",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.016906599048525095
+    },
+    {
+      "id": "b200-170",
+      "category": "financial_identity",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.016906599048525095
+    },
+    {
+      "id": "b200-171",
+      "category": "quoted_mixed",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.016906599048525095
+    },
+    {
+      "id": "b200-172",
+      "category": "quoted_mixed",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.016906599048525095
+    },
+    {
+      "id": "b200-173",
+      "category": "quoted_mixed",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.016906599048525095
+    },
+    {
+      "id": "b200-174",
+      "category": "quoted_mixed",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.016906599048525095
+    },
+    {
+      "id": "b200-175",
+      "category": "quoted_mixed",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.016906599048525095
+    },
+    {
+      "id": "b200-176",
+      "category": "quoted_mixed",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.016906599048525095
+    },
+    {
+      "id": "b200-177",
+      "category": "quoted_mixed",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012858395872171968
+    },
+    {
+      "id": "b200-178",
+      "category": "quoted_mixed",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012858395872171968
+    },
+    {
+      "id": "b200-179",
+      "category": "quoted_mixed",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012858395872171968
+    },
+    {
+      "id": "b200-180",
+      "category": "quoted_mixed",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012858395872171968
+    },
+    {
+      "id": "b200-181",
+      "category": "multilingual_sensitive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012858395872171968
+    },
+    {
+      "id": "b200-182",
+      "category": "multilingual_sensitive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012858395872171968
+    },
+    {
+      "id": "b200-183",
+      "category": "multilingual_sensitive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012858395872171968
+    },
+    {
+      "id": "b200-184",
+      "category": "multilingual_sensitive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012858395872171968
+    },
+    {
+      "id": "b200-185",
+      "category": "multilingual_sensitive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012854911503382027
+    },
+    {
+      "id": "b200-186",
+      "category": "multilingual_sensitive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012854911503382027
+    },
+    {
+      "id": "b200-187",
+      "category": "multilingual_sensitive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012854911503382027
+    },
+    {
+      "id": "b200-188",
+      "category": "multilingual_sensitive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012854911503382027
+    },
+    {
+      "id": "b200-189",
+      "category": "multilingual_sensitive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012854911503382027
+    },
+    {
+      "id": "b200-190",
+      "category": "multilingual_sensitive",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012854911503382027
+    },
+    {
+      "id": "b200-191",
+      "category": "intimate_and_implicit",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012854911503382027
+    },
+    {
+      "id": "b200-192",
+      "category": "intimate_and_implicit",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.012854911503382027
+    },
+    {
+      "id": "b200-193",
+      "category": "intimate_and_implicit",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01228039589477703
+    },
+    {
+      "id": "b200-194",
+      "category": "intimate_and_implicit",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01228039589477703
+    },
+    {
+      "id": "b200-195",
+      "category": "intimate_and_implicit",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01228039589477703
+    },
+    {
+      "id": "b200-196",
+      "category": "intimate_and_implicit",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01228039589477703
+    },
+    {
+      "id": "b200-197",
+      "category": "intimate_and_implicit",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01228039589477703
+    },
+    {
+      "id": "b200-198",
+      "category": "intimate_and_implicit",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01228039589477703
+    },
+    {
+      "id": "b200-199",
+      "category": "intimate_and_implicit",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01228039589477703
+    },
+    {
+      "id": "b200-200",
+      "category": "intimate_and_implicit",
+      "expected": "deny",
+      "decision": "deny",
+      "seconds_per_email_in_batch": 0.01228039589477703
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "port": 8789,
+  "googleCredentials": "/ABSOLUTE/PRIVATE/google-web-client.json",
+  "googleTokens": "/ABSOLUTE/PRIVATE/google-tokens.json",
+  "clients": [
+    {
+      "tokenSha256": "REPLACE_WITH_SHA256_OF_A_RANDOM_32_BYTE_BASE64URL_TOKEN",
+      "tools": ["gmail_search", "gmail_read", "gmail_create_draft"]
+    }
+  ],
+  "classifier": {
+    "command": "/ABSOLUTE/cairn/.venv/bin/python",
+    "args": [
+      "/ABSOLUTE/cairn/classifier/deberta_adapter.py",
+      "/ABSOLUTE/PRIVATE/deberta-model.json"
+    ]
+  }
+}

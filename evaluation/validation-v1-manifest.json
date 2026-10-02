@@ -1,0 +1,13 @@
+{
+  "policy": "privacy-only-v2",
+  "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+  "revision": "8e7e5af5983a0ddb1a5b45a38b129ab69e2258e8",
+  "thresholds": {
+    "allow": 0.9,
+    "sensitive": 0.1
+  },
+  "runner_sha256": "d984f3f7884e99a5e8124fbc281d18e9d7dd85f4da2bfa2fde20135d69e2b12a",
+  "corpus_sha256": "d165f827abd3408b223f503bc07ed0b8a5ba5f8c7f5e3ae7d341a45e09cd3a8f",
+  "cases": 62,
+  "protocol": "One evaluation after freezing. No threshold, hypothesis, category or label adjustments based on these results. This is new synthetic validation authored by the same assistant, not independent human-labeled data. Preserve failures and retire this set into regression tests if used for improvements. Length stress cases count separately from semantic accuracy."
+}

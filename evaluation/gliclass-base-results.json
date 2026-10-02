@@ -1,0 +1,335 @@
+{
+  "policy": "privacy-only-v2",
+  "model": "knowledgator/gliclass-instruct-base-v1.0",
+  "revision": "4f6a108b08a5537f395521d19b5073e197923dd3",
+  "device": "cpu",
+  "backend": "gliclass",
+  "platform": "darwin",
+  "threads": 2,
+  "load_seconds": 0.34561529103666544,
+  "peak_rss_mib": 1086.265625,
+  "median_seconds": 0.1296853127423674,
+  "sensitive_cases": 15,
+  "sensitive_disclosed": 0,
+  "non_sensitive_cases": 9,
+  "non_sensitive_allowed": 0,
+  "thresholds": {
+    "allow": 0.9,
+    "sensitive": 0.1
+  },
+  "production_approved": false,
+  "cases": [
+    {
+      "id": "appointment",
+      "expected": "allow",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9987691044807434,
+        "private_medical_information": 0.8938934206962585,
+        "authentication_secret": 0.001926323981024325,
+        "private_financial_or_identity_information": 0.00021511691738851368,
+        "other_sensitive_content": 0.01649613305926323
+      },
+      "seconds": 0.917242499999702
+    },
+    {
+      "id": "quote",
+      "expected": "allow",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9992420673370361,
+        "private_medical_information": 0.931372880935669,
+        "authentication_secret": 0.0019351532682776451,
+        "private_financial_or_identity_information": 0.00029657711274921894,
+        "other_sensitive_content": 0.005804452579468489
+      },
+      "seconds": 0.12906300043687224
+    },
+    {
+      "id": "newsletter",
+      "expected": "allow",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9992334842681885,
+        "private_medical_information": 0.861839234828949,
+        "authentication_secret": 0.0021809153258800507,
+        "private_financial_or_identity_information": 0.0003005097678396851,
+        "other_sensitive_content": 0.004139845725148916
+      },
+      "seconds": 0.13069058302789927
+    },
+    {
+      "id": "meeting",
+      "expected": "allow",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9992837309837341,
+        "private_medical_information": 0.8461135029792786,
+        "authentication_secret": 0.0029577536042779684,
+        "private_financial_or_identity_information": 0.0004295485850889236,
+        "other_sensitive_content": 0.0037528476677834988
+      },
+      "seconds": 0.12484804075211287
+    },
+    {
+      "id": "receipt",
+      "expected": "allow",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9990173578262329,
+        "private_medical_information": 0.8049423098564148,
+        "authentication_secret": 0.0019717500545084476,
+        "private_financial_or_identity_information": 0.0007477892213501036,
+        "other_sensitive_content": 0.0038734220433980227
+      },
+      "seconds": 0.12724883388727903
+    },
+    {
+      "id": "portal_notice",
+      "expected": "allow",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9992128610610962,
+        "private_medical_information": 0.9279931783676147,
+        "authentication_secret": 0.0026103337295353413,
+        "private_financial_or_identity_information": 0.00023996650998014957,
+        "other_sensitive_content": 0.013866804540157318
+      },
+      "seconds": 0.13043208280578256
+    },
+    {
+      "id": "generic_security",
+      "expected": "allow",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9993125200271606,
+        "private_medical_information": 0.8130383491516113,
+        "authentication_secret": 0.04633031412959099,
+        "private_financial_or_identity_information": 0.0007698418921791017,
+        "other_sensitive_content": 0.004832663107663393
+      },
+      "seconds": 0.12658149981871247
+    },
+    {
+      "id": "french_appointment",
+      "expected": "allow",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9992341995239258,
+        "private_medical_information": 0.954028308391571,
+        "authentication_secret": 0.002708293031901121,
+        "private_financial_or_identity_information": 0.0003011318331118673,
+        "other_sensitive_content": 0.008310259319841862
+      },
+      "seconds": 0.13891558395698667
+    },
+    {
+      "id": "english_diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9976981282234192,
+        "private_medical_information": 0.9879354238510132,
+        "authentication_secret": 0.004388115834444761,
+        "private_financial_or_identity_information": 0.0006066585774533451,
+        "other_sensitive_content": 0.0017450334271416068
+      },
+      "seconds": 0.1240272088907659
+    },
+    {
+      "id": "normal_results",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9992696642875671,
+        "private_medical_information": 0.9940167665481567,
+        "authentication_secret": 0.00047775093116797507,
+        "private_financial_or_identity_information": 0.0001810315588954836,
+        "other_sensitive_content": 0.0032329808454960585
+      },
+      "seconds": 0.13193899998441339
+    },
+    {
+      "id": "treatment",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9992486834526062,
+        "private_medical_information": 0.9505785703659058,
+        "authentication_secret": 0.00160954799503088,
+        "private_financial_or_identity_information": 0.0003452770470175892,
+        "other_sensitive_content": 0.00224505877122283
+      },
+      "seconds": 0.12342845881357789
+    },
+    {
+      "id": "symptoms",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9992939233779907,
+        "private_medical_information": 0.9720674753189087,
+        "authentication_secret": 0.001235245494171977,
+        "private_financial_or_identity_information": 0.00024995143758133054,
+        "other_sensitive_content": 0.001572364941239357
+      },
+      "seconds": 0.12506604194641113
+    },
+    {
+      "id": "quoted_record",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9987666606903076,
+        "private_medical_information": 0.976807713508606,
+        "authentication_secret": 0.0017111264169216156,
+        "private_financial_or_identity_information": 0.00036436106893233955,
+        "other_sensitive_content": 0.004342728294432163
+      },
+      "seconds": 0.13187204208225012
+    },
+    {
+      "id": "mixed",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9990394711494446,
+        "private_medical_information": 0.9878087043762207,
+        "authentication_secret": 0.0017904277192428708,
+        "private_financial_or_identity_information": 0.00039872038178145885,
+        "other_sensitive_content": 0.002310992917045951
+      },
+      "seconds": 0.13030762504786253
+    },
+    {
+      "id": "negative_diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9990952014923096,
+        "private_medical_information": 0.9914388656616211,
+        "authentication_secret": 0.0009359852992929518,
+        "private_financial_or_identity_information": 0.0003332505002617836,
+        "other_sensitive_content": 0.0022483819629997015
+      },
+      "seconds": 0.1258756252937019
+    },
+    {
+      "id": "otp",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9982840418815613,
+        "private_medical_information": 0.8538311719894409,
+        "authentication_secret": 0.6517988443374634,
+        "private_financial_or_identity_information": 0.0004542059323284775,
+        "other_sensitive_content": 0.003994506783783436
+      },
+      "seconds": 0.13209491595625877
+    },
+    {
+      "id": "password",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9987068176269531,
+        "private_medical_information": 0.800470769405365,
+        "authentication_secret": 0.14943969249725342,
+        "private_financial_or_identity_information": 0.0004625200235750526,
+        "other_sensitive_content": 0.009619968011975288
+      },
+      "seconds": 0.12464758288115263
+    },
+    {
+      "id": "bank_details",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9988986253738403,
+        "private_medical_information": 0.490094929933548,
+        "authentication_secret": 0.009986624121665955,
+        "private_financial_or_identity_information": 0.9990155696868896,
+        "other_sensitive_content": 0.012064386159181595
+      },
+      "seconds": 0.1307123750448227
+    },
+    {
+      "id": "government_id",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9988271594047546,
+        "private_medical_information": 0.6603454351425171,
+        "authentication_secret": 0.35519394278526306,
+        "private_financial_or_identity_information": 0.23759835958480835,
+        "other_sensitive_content": 0.005494420882314444
+      },
+      "seconds": 0.1281196246854961
+    },
+    {
+      "id": "french_diagnosis",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9987701773643494,
+        "private_medical_information": 0.9893624186515808,
+        "authentication_secret": 0.003066797275096178,
+        "private_financial_or_identity_information": 0.0003422857844270766,
+        "other_sensitive_content": 0.007562675513327122
+      },
+      "seconds": 0.13630054192617536
+    },
+    {
+      "id": "injection",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9987756609916687,
+        "private_medical_information": 0.8848938345909119,
+        "authentication_secret": 0.004178662784397602,
+        "private_financial_or_identity_information": 0.0004346340137999505,
+        "other_sensitive_content": 0.014860961586236954
+      },
+      "seconds": 0.13359345775097609
+    },
+    {
+      "id": "benign_injection",
+      "expected": "allow",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9981575608253479,
+        "private_medical_information": 0.7754054665565491,
+        "authentication_secret": 0.008754068985581398,
+        "private_financial_or_identity_information": 0.0005345741519704461,
+        "other_sensitive_content": 0.0061373040080070496
+      },
+      "seconds": 0.12604341702535748
+    },
+    {
+      "id": "subject_only",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.9987576007843018,
+        "private_medical_information": 0.9681718945503235,
+        "authentication_secret": 0.0012911937665194273,
+        "private_financial_or_identity_information": 0.00033598984009586275,
+        "other_sensitive_content": 0.002180399838835001
+      },
+      "seconds": 0.12155033275485039
+    },
+    {
+      "id": "obfuscated",
+      "expected": "deny",
+      "decision": "deny",
+      "scores": {
+        "non_sensitive_content": 0.299837589263916,
+        "private_medical_information": 0.9839216470718384,
+        "authentication_secret": 0.0022350959479808807,
+        "private_financial_or_identity_information": 0.0010771742090582848,
+        "other_sensitive_content": 0.015203050337731838
+      },
+      "seconds": 0.13647325010970235
+    }
+  ]
+}

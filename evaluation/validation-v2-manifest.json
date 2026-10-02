@@ -1,0 +1,14 @@
+{
+  "policy": "privacy-only-v3",
+  "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+  "revision": "8e7e5af5983a0ddb1a5b45a38b129ab69e2258e8",
+  "thresholds": {
+    "allow": 0.9,
+    "sensitive": 0.1
+  },
+  "runner_sha256": "5f9486c007f8ea21e127c0c0673982736c4049e436f9bb5279303734f52d5c08",
+  "privacy_policy_sha256": "52a9e0e946f880b056d081267e00fbbadb9caa3622c60537200667294fd51140",
+  "corpus_sha256": "d128ee359aa1938f371ef7b60f0514f6f2ec3239dd689103452692033f5bd4d8",
+  "cases": 52,
+  "protocol": "Frozen once before inference; no model or threshold changes based on these results. Synthetic cases authored by same assistant; not human-labeled or representative. Prior validation v1 is now regression/development data. Long cases are scored separately."
+}
