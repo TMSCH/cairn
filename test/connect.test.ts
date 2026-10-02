@@ -53,21 +53,27 @@ test("web connection saves only an approved account token and rejects replay", a
       req.on("error", reject);
       req.end();
     });
+  const start = async () => {
+    const page = await call("/");
+    const nonce = page.body.match(/\/google\/start\?nonce=([A-Za-z0-9_-]+)/)?.[1];
+    assert(nonce);
+    return call(`/google/start?nonce=${nonce}`);
+  };
   try {
     assert.equal((await call("/", "GET", { Host: "evil.example" })).status, 403);
     const page = await call("/");
     assert.equal(page.status, 200);
     assert.match(page.body, /Connect Gmail to Nestor/);
     assert.equal((await call("/google/start")).location, "/");
-    assert.equal((await call("/google/start", "POST", { Origin: "https://evil.example" })).status, 403);
-    assert.equal((await call("/google/start", "POST", { Origin: "https://connect.tch.dev" })).status, 303);
+    assert.equal((await call("/google/start", "POST", { Origin: "https://evil.example" })).location, "/");
+    assert.equal((await start()).status, 303);
     assert.equal((await call("/google/callback?state=wrong&code=once")).status, 400);
     await assert.rejects(readFile(tokenPath));
-    assert.equal((await call("/google/start", "POST", { Origin: "https://connect.tch.dev" })).status, 303);
+    assert.equal((await start()).status, 303);
     assert.equal((await call(`/google/callback?state=${state}&code=once`)).status, 403);
     await assert.rejects(readFile(tokenPath));
     email = "owner@example.com";
-    assert.equal((await call("/google/start", "POST", { Origin: "https://connect.tch.dev" })).status, 303);
+    assert.equal((await start()).status, 303);
     const callback = `/google/callback?state=${state}&code=once`;
     assert.equal((await call(callback)).status, 200);
     assert.equal((await call(callback)).status, 400);

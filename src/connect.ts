@@ -23,12 +23,12 @@ h1{margin:0;font-family:Georgia,serif;font-size:clamp(36px,8vw,48px);font-weight
 ul{margin:0 0 28px;padding:0;list-style:none}
 li{display:flex;gap:12px;align-items:baseline;padding:11px 0;border-top:1px solid #ffffff1b;color:#eef2ed;font-size:14px}
 li::before{content:"✓";color:#bad8b5;font-weight:700}
-button{width:100%;padding:15px 20px;border:0;border-radius:12px;background:#c7e1bd;color:#14251f;font-family:inherit;font-size:15px;font-weight:700;cursor:pointer}
-button:hover{background:#def1d4}
-button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.button{display:block;width:100%;padding:15px 20px;border:0;border-radius:12px;background:#c7e1bd;color:#14251f;font-family:inherit;font-size:15px;font-weight:700;text-align:center;text-decoration:none;cursor:pointer}
+.button:hover{background:#def1d4}
+.button:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .note{margin:19px 0 0;color:#a9b8b2;font-size:12px;line-height:1.55}
 `;
-const pageHtml = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connect Google · Cairn</title><style>${pageStyle}</style></head><body><main><div class="brand"><span class="mark" aria-hidden="true">C</span>Cairn</div><p class="eyebrow">Google connection</p><h1>Connect Gmail to Nestor</h1><p class="intro">Cairn gives Nestor limited access to your inbox while keeping your Google credentials separate.</p><ul><li>Search email and read approved plain text</li><li>Prepare drafts for you to review</li><li>No send action is available to Nestor</li></ul><form action="/google/start" method="post"><button type="submit">Continue with Google</button></form><p class="note">Google’s compose permission also covers sending. Cairn holds that permission but exposes only draft creation to Nestor.</p></main></body></html>`;
+const pageHtml = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connect Google · Cairn</title><style>${pageStyle}</style></head><body><main><div class="brand"><span class="mark" aria-hidden="true">C</span>Cairn</div><p class="eyebrow">Google connection</p><h1>Connect Gmail to Nestor</h1><p class="intro">Cairn gives Nestor limited access to your inbox while keeping your Google credentials separate.</p><ul><li>Search email and read approved plain text</li><li>Prepare drafts for you to review</li><li>No send action is available to Nestor</li></ul><a class="button" href="/google/start?nonce=__START_NONCE__">Continue with Google</a><p class="note">Google’s compose permission also covers sending. Cairn holds that permission but exposes only draft creation to Nestor.</p></main></body></html>`;
 const pageStyleHash = createHash("sha256").update(pageStyle).digest("base64");
 
 export interface GoogleOAuthFlow {
@@ -75,6 +75,7 @@ export function connectionServer(
   flow: GoogleOAuthFlow,
 ) {
   let pending: { state: string; verifier: string; expires: number } | undefined;
+  const startNonces = new Map<string, number>();
   const host = new URL(config.publicOrigin).host;
   return createServer(async (req, res) => {
     res.setHeader("Cache-Control", "no-store");
@@ -95,18 +96,24 @@ export function connectionServer(
     }
     if (url.pathname === "/" && req.method === "GET") {
       if (url.search) return reply(404);
+      const nonce = randomBytes(32).toString("base64url");
+      for (const [key, expiry] of startNonces)
+        if (expiry < Date.now()) startNonces.delete(key);
+      if (startNonces.size >= 20) startNonces.delete(startNonces.keys().next().value!);
+      startNonces.set(nonce, Date.now() + 300_000);
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-      res.end(pageHtml);
+      res.end(pageHtml.replace("__START_NONCE__", nonce));
       return;
     }
-    if (url.pathname === "/google/start" && req.method === "GET" && !url.search) {
-      res.writeHead(303, { Location: "/" });
-      res.end();
-      return;
-    }
-    if (url.pathname === "/google/start" && req.method === "POST") {
-      if (url.search || req.headers.origin !== config.publicOrigin || Number(req.headers["content-length"] ?? 0) > 0)
-        return reply(403);
+    if (url.pathname === "/google/start") {
+      const nonce = url.searchParams.get("nonce");
+      const expires = nonce && startNonces.get(nonce);
+      if (req.method !== "GET" || url.searchParams.size !== 1 || !nonce || !expires || expires < Date.now()) {
+        res.writeHead(303, { Location: "/" });
+        res.end();
+        return;
+      }
+      startNonces.delete(nonce);
       pending = undefined;
       const state = randomBytes(32).toString("base64url");
       try {
