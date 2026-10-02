@@ -103,7 +103,7 @@ export function registerGmail(gateway: Gateway, api: gmail_v1.Gmail) {
   gateway.register({
     name: "gmail_search",
     description:
-      "Search up to 20 candidates; return approved IDs, senders, subjects and dates only. Read a selected ID separately for its body. Results may be incomplete.",
+      "Search Gmail through Cairn's privacy filter (up to 20 candidates). Returns approved IDs, senders, subjects and dates only; no body, snippet or attachment. Omitted results may still exist. Call gmail_read with an ID to request its text body separately.",
     input: z
       .object({
         query: z.string().max(500),
@@ -140,7 +140,7 @@ export function registerGmail(gateway: Gateway, api: gmail_v1.Gmail) {
   gateway.register({
     name: "gmail_read",
     description:
-      "Read an approved text email. Withheld content returns an empty items list.",
+      "Read one Gmail message by ID through Cairn's privacy filter. Returns plain text only when approved. Sensitive, unsupported or overlong content returns an empty items list; do not infer that the message is absent or try another access path.",
     input: z
       .object({ id: z.string().regex(/^[a-zA-Z0-9_-]{1,256}$/) })
       .strict(),
