@@ -55,6 +55,10 @@ test("web connection saves only an approved account token and rejects replay", a
     });
   try {
     assert.equal((await call("/", "GET", { Host: "evil.example" })).status, 403);
+    const page = await call("/");
+    assert.equal(page.status, 200);
+    assert.match(page.body, /Connect Gmail to Nestor/);
+    assert.equal((await call("/google/start")).location, "/");
     assert.equal((await call("/google/start", "POST", { Origin: "https://evil.example" })).status, 403);
     assert.equal((await call("/google/start", "POST", { Origin: "https://connect.tch.dev" })).status, 303);
     assert.equal((await call("/google/callback?state=wrong&code=once")).status, 400);

@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { randomBytes } from "node:crypto";
+import { createHash, randomBytes } from "node:crypto";
 import { pathToFileURL } from "node:url";
 import { gmail } from "@googleapis/gmail";
 import { OAuth2Client, CodeChallengeMethod } from "google-auth-library";
@@ -9,6 +9,27 @@ const scopes = [
   "https://www.googleapis.com/auth/gmail.readonly",
   "https://www.googleapis.com/auth/gmail.compose",
 ];
+
+const pageStyle = `
+:root{color-scheme:dark;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+body{min-height:100vh;margin:0;display:grid;place-items:center;padding:24px;color:#f5f2ec;background:radial-gradient(circle at 18% 15%,#374b42 0,transparent 35%),radial-gradient(circle at 85% 88%,#293a3d 0,transparent 38%),#101b1c}
+main{width:min(100%,490px);padding:36px;border:1px solid #ffffff24;border-radius:24px;background:#1c2a2ad9;box-shadow:0 24px 70px #0005}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:36px;font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#b9d7b5;color:#17352d;font-size:22px;font-family:Georgia,serif}
+.eyebrow{margin:0 0 12px;color:#bad8b5;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+h1{margin:0;font-family:Georgia,serif;font-size:clamp(36px,8vw,48px);font-weight:500;line-height:1.08;letter-spacing:-.035em}
+.intro{margin:20px 0 25px;color:#d2dad5;font-size:16px;line-height:1.6}
+ul{margin:0 0 28px;padding:0;list-style:none}
+li{display:flex;gap:12px;align-items:baseline;padding:11px 0;border-top:1px solid #ffffff1b;color:#eef2ed;font-size:14px}
+li::before{content:"✓";color:#bad8b5;font-weight:700}
+button{width:100%;padding:15px 20px;border:0;border-radius:12px;background:#c7e1bd;color:#14251f;font-family:inherit;font-size:15px;font-weight:700;cursor:pointer}
+button:hover{background:#def1d4}
+button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.note{margin:19px 0 0;color:#a9b8b2;font-size:12px;line-height:1.55}
+`;
+const pageHtml = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connect Google · Cairn</title><style>${pageStyle}</style></head><body><main><div class="brand"><span class="mark" aria-hidden="true">C</span>Cairn</div><p class="eyebrow">Google connection</p><h1>Connect Gmail to Nestor</h1><p class="intro">Cairn gives Nestor limited access to your inbox while keeping your Google credentials separate.</p><ul><li>Search email and read approved plain text</li><li>Prepare drafts for you to review</li><li>No send action is available to Nestor</li></ul><form action="/google/start" method="post"><button type="submit">Continue with Google</button></form><p class="note">Google’s compose permission also covers sending. Cairn holds that permission but exposes only draft creation to Nestor.</p></main></body></html>`;
+const pageStyleHash = createHash("sha256").update(pageStyle).digest("base64");
 
 export interface GoogleOAuthFlow {
   start(state: string): Promise<{ url: string; verifier: string }>;
@@ -59,7 +80,7 @@ export function connectionServer(
     res.setHeader("Cache-Control", "no-store");
     res.setHeader("Referrer-Policy", "no-referrer");
     res.setHeader("X-Content-Type-Options", "nosniff");
-    res.setHeader("Content-Security-Policy", "default-src 'none'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'");
+    res.setHeader("Content-Security-Policy", `default-src 'none'; style-src 'sha256-${pageStyleHash}'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'`);
     const reply = (status: number, body = "") => {
       res.writeHead(status, { "Content-Type": "text/plain; charset=utf-8" });
       res.end(body);
@@ -75,7 +96,12 @@ export function connectionServer(
     if (url.pathname === "/" && req.method === "GET") {
       if (url.search) return reply(404);
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-      res.end('<!doctype html><html lang="en"><meta charset="utf-8"><title>Connect Cairn</title><h1>Connect Google to Cairn</h1><p>This grants Gmail read and compose access to Cairn. Google’s compose permission includes sending, but Cairn only exposes search, read and draft tools to Nesta.</p><form action="/google/start" method="post"><button type="submit">Connect Google</button></form></html>');
+      res.end(pageHtml);
+      return;
+    }
+    if (url.pathname === "/google/start" && req.method === "GET" && !url.search) {
+      res.writeHead(303, { Location: "/" });
+      res.end();
       return;
     }
     if (url.pathname === "/google/start" && req.method === "POST") {
