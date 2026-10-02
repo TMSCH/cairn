@@ -33,7 +33,7 @@ export interface Tool {
   description: string;
   input: z.ZodObject;
   policy: "messages" | "metadata" | "draftReceipt";
-  run(input: any): Promise<Candidate[]>;
+  run(input: any): Promise<Candidate[] | { candidates: Candidate[]; nextPageToken?: string }>;
 }
 export class Gateway {
   private tools = new Map<string, Tool>();
@@ -45,20 +45,26 @@ export class Gateway {
   async execute(name: string, input: unknown, grants: readonly string[]) {
     const tool = this.tools.get(name);
     if (!tool || !grants.includes(name)) throw new Error("Unavailable");
-    const candidates = await tool.run(tool.input.parse(input));
+    const result = await tool.run(tool.input.parse(input));
+    const candidates = Array.isArray(result) ? result : result.candidates;
+    const nextPageToken = !Array.isArray(result) && result.nextPageToken !== undefined
+      ? z.string().min(1).max(4096).parse(result.nextPageToken) : undefined;
+    if (nextPageToken !== undefined && tool.policy !== "metadata")
+      throw new Error("Invalid pagination policy");
     const output: unknown[] = [];
     for (const candidate of candidates) {
-      if (
-        (tool.policy === "messages" && candidate.kind === "message") ||
-        (tool.policy === "metadata" && candidate.kind === "metadata")
-      ) {
+      if (tool.policy === "metadata" && candidate.kind === "metadata") {
+        // Listing metadata is explicitly allowed; bodies and snippets are not.
+        if (!candidate.supported) throw new Error("Unsupported metadata");
+        output.push(metadataSchema.parse(candidate.value));
+      } else if (tool.policy === "messages" && candidate.kind === "message") {
         // Classify exactly the fields that can leave the process, once.
-        const value = (candidate.kind === "message" ? messageSchema : metadataSchema).parse(candidate.value);
+        const value = messageSchema.parse(candidate.value);
         const text = JSON.stringify(value);
         if (
           candidate.supported &&
           Buffer.byteLength(text) <= 48_000 &&
-          (await this.classifier.allows(text))
+          (await this.classifier.allows(text).catch(() => false))
         )
           output.push(value);
       } else if (
@@ -73,7 +79,9 @@ export class Gateway {
         );
       } else throw new Error("Invalid disclosure policy");
     }
-    return { items: output };
+    if (tool.policy === "messages" && output.length === 0)
+      return { items: output, access: "denied", message: "Can't access this email: Cairn withheld its content." };
+    return { items: output, ...(nextPageToken === undefined ? {} : { nextPageToken }) };
   }
   mcp(grants: readonly string[]) {
     const server = new McpServer({

@@ -20,15 +20,15 @@ Nesta ── bearer token ──> loopback MCP endpoint
 
 ## Implemented scope
 
-- `gmail_search`: uses Gmail search to find up to 20 candidates, fetches only their selected headers, and returns approved IDs, senders, subjects and dates. It never returns snippets or bodies. No upstream counts or pagination tokens escape. Results can be incomplete.
-- `gmail_read`: rechecks the full message on every read. Denied, uncertain, unsupported and oversized messages produce an empty list.
+- `gmail_search`: returns all matching IDs, senders, subjects and dates in a page without sensitivity filtering. It never returns snippets or bodies. Defaults to 20 results, supports up to 100, and returns `nextPageToken` when more results exist; pass it as `pageToken` with the same query.
+- `gmail_read`: rechecks the full message on every read. Denied, uncertain, unsupported and oversized messages return an empty list plus `access: "denied"` and a cannot-access message.
 - `gmail_create_draft`: creates a new plain-text draft; returns only its ID. It cannot send, update existing drafts, or fetch arbitrary URLs/files. Treat timeouts as an unknown outcome; check Gmail before retrying to avoid duplicates.
 - Exact tool grants per gateway token, one Google account per process. Run separate instances/ports/private directories for separate accounts.
-- Local DeBERTa subprocess, offline model loading, no cloud inference fallback. Only an `allow` verdict permits disclosure. Classifier failures fail closed. Search metadata and full reads are classified independently.
+- Local DeBERTa subprocess, offline model loading, no cloud inference fallback. Only an `allow` verdict permits body disclosure. Classifier failures fail closed. Search metadata is explicitly allowed without classification; full reads are classified and withheld reads return `access: "denied"` with a clear cannot-access message.
 
 **Read content is limited to UTF-8 / ASCII plain-text MIME.** HTML alternatives and attachments are skipped; a message needs a usable plain-text body. Unsupported plain-text charsets or undecodable body parts withhold the read. No attachment download tool yet, and search does not expose attachment metadata. No redaction yet: an entire returned body is allowed or withheld, including quoted history.
 
-This is an initial implementation, not a verified privacy guarantee. Local model classification can be wrong. On the 200 synthetic-email benchmark, the provisional DeBERTa base policy allowed 4 of 100 labeled-sensitive examples and 90 of 100 labeled-nonsensitive examples. This says little about a real inbox; evaluate representative private examples before relying on it. Search subject approval does not imply body approval. Timing and missing results can still reveal limited existence information; this is not a side-channel resistant service.
+This is an initial implementation, not a verified privacy guarantee. Local model classification can be wrong. On the 200 synthetic-email benchmark, the provisional DeBERTa base policy allowed 4 of 100 labeled-sensitive examples and 90 of 100 labeled-nonsensitive examples. This says little about a real inbox; evaluate representative private examples before relying on it. A listed subject does not imply body approval. Timing and missing results can still reveal limited existence information; this is not a side-channel resistant service.
 
 ## Trust boundary
 
