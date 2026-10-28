@@ -103,17 +103,18 @@ export function registerGmail(gateway: Gateway, api: gmail_v1.Gmail) {
   gateway.register({
     name: "gmail_search",
     description:
-      "Search Gmail through Cairn's privacy filter (up to 20 candidates). Returns approved IDs, senders, subjects and dates only; no body, snippet or attachment. Omitted results may still exist. Call gmail_read with an ID to request its text body separately.",
+      "Search Gmail using Gmail query syntax. For recent mail across the mailbox use newer_than:7d; add in:inbox only when the user specifically wants the inbox (it excludes archived mail). Returns all matching IDs, senders, subjects and dates in the requested page WITHOUT sensitivity filtering; no body, snippet or attachment. Default 20, maximum 100 per page. If nextPageToken is returned, pass it with the same query to fetch more; a page is not the full result set. Call gmail_read for a body; listed messages may still be denied on read.",
     input: z
       .object({
         query: z.string().max(500),
-        limit: z.number().int().min(1).max(20).default(10),
+        limit: z.number().int().min(1).max(100).default(20),
+        pageToken: z.string().min(1).max(4096).optional(),
       })
       .strict(),
     policy: "metadata",
-    async run({ query, limit }) {
+    async run({ query, limit, pageToken }) {
       const result = await api.users.messages.list(
-        { userId: "me", q: query, maxResults: limit },
+        { userId: "me", q: query, maxResults: limit, pageToken },
         { timeout: 30_000 },
       );
       const items: Candidate[] = [];
@@ -134,13 +135,13 @@ export function registerGmail(gateway: Gateway, api: gmail_v1.Gmail) {
               ).data,
             ),
           );
-      return items;
+      return { candidates: items, nextPageToken: result.data.nextPageToken ?? undefined };
     },
   });
   gateway.register({
     name: "gmail_read",
     description:
-      "Read one Gmail message by ID through Cairn's privacy filter. Returns plain text only when approved. Sensitive, unsupported or overlong content returns an empty items list; do not infer that the message is absent or try another access path.",
+      "Read one Gmail message by ID through Cairn's privacy filter. Returns plain text only when approved. Sensitive, unsupported or overlong content returns access=denied with an explicit cannot-access message; do not infer that the message is absent or try another access path.",
     input: z
       .object({ id: z.string().regex(/^[a-zA-Z0-9_-]{1,256}$/) })
       .strict(),

@@ -61,26 +61,25 @@ function fixture() {
   registerGmail(gateway, api as unknown as gmail_v1.Gmail);
   return { gateway, calls, gets, inspected, api };
 }
-test("search classifies metadata only and omits bodies, snippets and raw counts", async () => {
+test("search includes sensitive metadata without classifying and omits bodies, snippets and raw counts", async () => {
   const { gateway, inspected, gets } = fixture();
   const result = await gateway.execute("gmail_search", { query: "doctor" }, [
     "gmail_search",
   ]);
-  assert.equal(result.items.length, 1);
-  assert.equal(inspected.length, 2);
-  assert(!JSON.stringify(result).includes("confidential"));
+  assert.equal(result.items.length, 2);
+  assert.equal(inspected.length, 0);
+  assert(JSON.stringify(result).includes("Confidential diagnosis"));
   assert(!JSON.stringify(result).includes("999"));
   assert(!JSON.stringify(result).includes("Appointment at 10"));
   assert(!JSON.stringify(result).includes("PRIVATE_SNIPPET"));
   assert(!inspected.some((text) => text.includes("Diagnosis")));
   assert.deepEqual(gets.map((x) => x.format), ["metadata", "metadata"]);
-  assert(inspected[0].includes("Doctor visit"));
 });
 test("direct read cannot bypass filtering", async () => {
   const { gateway, gets } = fixture();
   assert.deepEqual(
     await gateway.execute("gmail_read", { id: "private" }, ["gmail_read"]),
-    { items: [] },
+    { items: [], access: "denied", message: "Can't access this email: Cairn withheld its content." },
   );
   assert.deepEqual(gets.map((x) => x.format), ["full"]);
 });
@@ -95,7 +94,7 @@ test("an allowed search result does not authorize its sensitive body", async () 
   );
   assert.deepEqual(
     await gateway.execute("gmail_read", { id: "safe" }, ["gmail_read"]),
-    { items: [] },
+    { items: [], access: "denied", message: "Can't access this email: Cairn withheld its content." },
   );
 });
 test("HTML-only, attached, invalid and incomplete bodies are withheld", () => {
@@ -179,9 +178,8 @@ test("classifier failure and oversized source do not disclose data", async () =>
     },
   });
   registerGmail(gateway, fixture().api as unknown as gmail_v1.Gmail);
-  await assert.rejects(
-    gateway.execute("gmail_read", { id: "safe" }, ["gmail_read"]),
-  );
+  assert.equal((await gateway.execute("gmail_read", { id: "safe" }, ["gmail_read"])).access, "denied");
+  assert.equal((await gateway.execute("gmail_search", { query: "" }, ["gmail_search"])).items.length, 2);
   const candidate = normalize(email("x".repeat(33000)));
   assert.equal(candidate.kind === "message" && candidate.supported, false);
 });
@@ -271,4 +269,21 @@ test("HTTP authentication, tool visibility and sanitized provider errors", async
   } finally {
     await new Promise<void>((r) => server.close(() => r()));
   }
+});
+
+test("search forwards pagination and returns the next cursor", async () => {
+  const { gateway, api } = fixture();
+  let requested: any;
+  api.users.messages.list = async (...args: any[]) => {
+    requested = args[0];
+    return { data: { messages: [], resultSizeEstimate: 999, nextPageToken: "next-page" } };
+  };
+  const result = await gateway.execute("gmail_search", { query: "newer_than:7d", limit: 100, pageToken: "previous-page" }, ["gmail_search"]);
+  assert.deepEqual(requested, { userId: "me", q: "newer_than:7d", maxResults: 100, pageToken: "previous-page" });
+  assert.deepEqual(result, { items: [], nextPageToken: "next-page" });
+});
+test("metadata cannot smuggle a body through the core policy", async () => {
+  const gateway = new Gateway({ allows: async () => true });
+  gateway.register({ name: "bad_search", description: "test", input: (await import("zod")).z.object({}), policy: "metadata", run: async () => [{ kind: "metadata", supported: true, value: { id: "x", from: "", subject: "", date: "", body: "secret" } as any }] });
+  await assert.rejects(gateway.execute("bad_search", {}, ["bad_search"]));
 });
