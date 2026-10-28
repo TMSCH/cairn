@@ -1,0 +1,8 @@
+# Direct dependencies pinned to Cairn's existing local evaluation environment.
+# A run also records the complete installed package list. No Trainer/cloud logger.
+torch==2.14.1
+transformers==5.18.0
+huggingface_hub==1.33.0
+safetensors==0.8.0
+tokenizers==0.23.2
+certifi>=2026.10.19
